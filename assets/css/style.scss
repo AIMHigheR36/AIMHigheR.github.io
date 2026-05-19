@@ -369,3 +369,11 @@ a {
     max-width: 100%;
   }
 }
+
+/* Center an image in the post flow */
+.post-center {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
