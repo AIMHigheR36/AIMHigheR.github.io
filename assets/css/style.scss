@@ -1,6 +1,19 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+// apply fonts
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+---
+---
+
 @import "{{ site.theme }}";
 
 // Override colors
