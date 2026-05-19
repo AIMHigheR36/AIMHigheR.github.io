@@ -6,7 +6,7 @@ layout: default
 # Alejandro Miller
 ### *A quietly determined financial professional who builds systems that outlast him.*
 
-[Articles](/articles) · [LinkedIn](https://www.linkedin.com/in/almill36) · [GitHub](https://github.com/your-username)
+[Articles](/articles) · [LinkedIn](https://www.linkedin.com/in/almill36) · [GitHub](https://github.com/AIMHigheR36)
 
 </div>
 
