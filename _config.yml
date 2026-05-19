@@ -1,0 +1,13 @@
+title: AIMhigheR
+tagline: Building systems that outlast me.
+description: The personal site of Alejandro Miller — finance professional, systems thinker, and aspiring Financial Data Architect.
+url: "https://aimhigher.dev"   # we'll set this once domain is linked
+baseurl: ""
+author:
+  name: Alejandro Miller
+  email: miller.alejandro97@outlook.com
+
+# Theme
+remote_theme: pages-themes/cayman@v0.2.0   # A clean, minimal theme; you can change later
+plugins:
+  - jekyll-remote-theme
