@@ -13,10 +13,9 @@ h1, h2, h3, h4, h5, h6 {
 
 ---
 ---
+@import "jekyll-theme-cayman";
 
-@import "{{ site.theme }}";
-
-// Override colors
+// Custom styles
 .page-header {
   background-color: #2563EB;
   background-image: none;
