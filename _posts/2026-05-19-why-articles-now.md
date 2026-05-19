@@ -7,6 +7,8 @@ categories: reflection
 
 ## The First Post
 
+<img src="/assets/images/first-post.png" alt="Excel-erator Challenge post" class="post-float-right">
+
 In 2023, all I had to post was an Excel challenge screenshot and no idea if anyone would care. I'd had a LinkedIn profile for a decade but never used it. I knew the platform was a different space for professionals to talk about their work, but I didn't know what people were looking for. I was only connected to high school classmates and family.
 
 Then CFI launched an Excel-erator challenge: seven days of short exercises to test your skills. I signed up, excited to see if CFI was the right fit. When the Day 1 email arrived, I screenshotted it and posted it. That was my first post ever—a tiny snippet of my journey. I had no idea where it would lead.
