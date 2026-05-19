@@ -342,3 +342,30 @@ a {
   color: #9ca3af;
   margin: 0 0.25rem;
 }
+
+/* Floating image – right side */
+.post-float-right {
+  float: right;
+  max-width: 250px;        /* adjust to your preferred size */
+  width: 100%;
+  margin: 0 0 1.25rem 1.75rem;  /* top right bottom left */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Clear the float after the content so it doesn't break layout below */
+.post-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive: on small screens, stop floating and center the image */
+@media (max-width: 600px) {
+  .post-float-right {
+    float: none;
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 100%;
+  }
+}
