@@ -33,6 +33,11 @@ I stayed in the Data Processor role longer than I wanted to. The pressure was in
 
 Then I noticed LinkedIn's collaborative articles. The platform invited users to answer professional questions. I had experiences that might benefit someone else, so I started contributing on topics I knew well. Before I fully understood what was happening, I earned the 'Top Data Entry Voice' badge. I felt like I had something to say. It was a quiet validation. A second badge followed, for Analytics. Then I stopped.
 
+<div class="badge-pair">
+  <img src="/assets/images/top-data-entry-voice.jpeg" alt="Top Data Entry Voice badge" class="badge-pair__img">
+  <img src="/assets/images/top-analytics-voice.jpg" alt="Top Analytics Voice badge" class="badge-pair__img">
+</div>
+
 I didn't have anything fresh to add, and I didn't want to repeat myself just to keep a badge. I held them while I had something to say, and for a season, that was beautiful. I trusted that more experience would give me more to say later. It did.
 
 ## The 5 Year Anniversary Post
