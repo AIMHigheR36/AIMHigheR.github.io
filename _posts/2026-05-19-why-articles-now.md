@@ -7,7 +7,7 @@ categories: reflection
 
 ## The First Post
 
-<img src="/assets/images/first-post.png" alt="Excel-erator Challenge post" class="post-float-right">
+<img src="/assets/images/First-Post.PNG" alt="Excel-erator Challenge post" class="post-float-right">
 
 In 2023, all I had to post was an Excel challenge screenshot and no idea if anyone would care. I'd had a LinkedIn profile for a decade but never used it. I knew the platform was a different space for professionals to talk about their work, but I didn't know what people were looking for. I was only connected to high school classmates and family.
 
@@ -17,7 +17,7 @@ Then CFI launched an Excel-erator challenge: seven days of short exercises to te
 
 I watched YouTube videos about building a strong LinkedIn profile. Creators like Jeff Su and Kenji Explains showed me how. I didn't know how to describe my work to someone outside the role. It took time and many rewrites. Their advice helped me grasp what a profile should communicate. I wrote a summary for the About section and even made a banner in Canva, which I updated several times over the years.
 
-<img src="/assets/images/first-banner.jpg" alt="My LinkedIn banner" class="post-center" style="max-width:600px;">
+<img src="/assets/images/First-Banner.jpg" alt="My First LinkedIn Banner" class="post-center" style="max-width:600px;">
 
 I also studied how others posted. I noted what grabbed my attention and learned what to avoid from the ones I scrolled past. It was never about how long the post was, just whether it was engaging. I still didn't know if I had a voice worth hearing, but I figured I have nothing to lose. Either people engage, or I keep enjoying my small corner with my small wins.
 
@@ -34,8 +34,8 @@ I stayed in the Data Processor role longer than I wanted to. The pressure was in
 Then I noticed LinkedIn's collaborative articles. The platform invited users to answer professional questions. I had experiences that might benefit someone else, so I started contributing on topics I knew well. Before I fully understood what was happening, I earned the 'Top Data Entry Voice' badge. I felt like I had something to say. It was a quiet validation. A second badge followed, for Analytics. Then I stopped.
 
 <div class="badge-pair">
-  <img src="/assets/images/top-data-entry-voice.jpeg" alt="Top Data Entry Voice badge" class="badge-pair__img">
-  <img src="/assets/images/top-analytics-voice.jpg" alt="Top Analytics Voice badge" class="badge-pair__img">
+  <img src="/assets/images/Top-Data-Entry-Voice.jpeg" alt="Top Data Entry Voice badge" class="badge-pair__img">
+  <img src="/assets/images/Top-Analytics-Voice.jpg" alt="Top Analytics Voice badge" class="badge-pair__img">
 </div>
 
 I didn't have anything fresh to add, and I didn't want to repeat myself just to keep a badge. I held them while I had something to say, and for a season, that was beautiful. I trusted that more experience would give me more to say later. It did.
