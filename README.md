@@ -1,1 +1,1 @@
-# AIMHigheR36.github.io
+# AIMHigheR.github.io
