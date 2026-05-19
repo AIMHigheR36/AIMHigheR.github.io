@@ -377,3 +377,33 @@ a {
   max-width: 100%;
   border-radius: 8px;
 }
+
+/* Side-by-side image pair (badges) */
+.badge-pair {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;         /* allows stacking on very narrow screens */
+}
+
+.badge-pair__img {
+  max-width: 280px;        /* adjust to your preferred badge size */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  object-fit: contain;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 600px) {
+  .badge-pair {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .badge-pair__img {
+    max-width: 220px;
+  }
+}
