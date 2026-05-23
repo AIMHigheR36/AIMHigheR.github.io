@@ -14,13 +14,12 @@ layout: default
   <h2 class="connect-title">Get to know me</h2>
   <p class="connect-text">I write about finance, systems thinking, and building things that last. Let’s connect.</p>
   <div class="badge-row">
-    {% include linkedin-badge.html %}
+    <a href="https://bs.linkedin.com/in/almill36" class="badge-link badge-linkedin" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://github.com/AIMHigheR36" class="badge-link badge-github" target="_blank" rel="noopener">GitHub</a>
     <a href="/" class="badge-link badge-website">aimhigher.dev</a>
   </div>
 </div>
 
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 ---
 
 ## About Me
