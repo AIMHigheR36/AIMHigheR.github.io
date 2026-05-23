@@ -326,23 +326,6 @@ a {
   font-size: 0.9rem;
 }
 
-.post-links a {
-  color: #2563EB;
-  text-decoration: none;
-  font-weight: 600;
-  margin: 0 0.25rem;
-}
-
-.post-links a:hover {
-  text-decoration: underline;
-  color: #1d4ed8;
-}
-
-.post-links-sep {
-  color: #9ca3af;
-  margin: 0 0.25rem;
-}
-
 /* Floating image – right side */
 .post-float-right {
   float: right;
@@ -481,28 +464,6 @@ a {
   content: "🌐";
 }
 
-/* Dark mode adjustments for non‑LinkedIn badges */
-@media (prefers-color-scheme: dark) {
-  .connect-title {
-    color: #f3f4f6;
-  }
-  .connect-text {
-    color: #d1d5db;
-  }
-  .badge-link {
-    background: #374151;
-    color: #f9fafb;
-  }
-  .badge-github {
-    background: #6e7681; /* lighter GitHub dark */
-    color: #ffffff;
-  }
-  .badge-website {
-    background: #3b82f6; /* a bit lighter blue */
-    color: #ffffff;
-  }
-}
-
 /* LinkedIn badge */
 .badge-linkedin {
   background: #0A66C2;   /* LinkedIn brand blue */
@@ -515,7 +476,156 @@ a {
   margin-right: 0.2rem;
 }
 
-.badge-linkedin {
-  background: #3b82f6;   /* lighter blue for dark backgrounds */
-  color: #ffffff;
+
+/* ===== Full Site Dark Mode ===== */
+@media (prefers-color-scheme: dark) {
+  /* Base */
+  body {
+    background-color: #0f172a;  /* deep navy */
+    color: #e2e8f0;
+  }
+
+  a {
+    color: #60a5fa;  /* lighter blue for readability */
+  }
+
+  /* Cayman theme header */
+  .page-header {
+    background-color: #1e293b;
+    background-image: none;
+  }
+  .page-header .project-name {
+    color: #f1f5f9;
+  }
+  .page-header .project-tagline {
+    color: #cbd5e1;
+  }
+
+  /* Main content container */
+  .main-content {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    h1, h2, h3, h4, h5, h6 {
+      color: #f1f5f9;
+    }
+    p, li {
+      color: #cbd5e1;
+    }
+    a {
+      color: #93c5fd;
+      &:hover {
+        color: #bfdbfe;
+      }
+    }
+    blockquote {
+      background: #334155;
+      border-left-color: #60a5fa;
+      color: #cbd5e1;
+    }
+    code {
+      background: #334155;
+      color: #f1f5f9;
+    }
+    pre {
+      background: #0f172a;
+      border: 1px solid #334155;
+    }
+  }
+
+  /* Article cards (listing page) */
+  .article-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
+  }
+  .article-card__title a {
+    color: #f1f5f9;
+    &:hover { color: #93c5fd; }
+  }
+  .article-card__date {
+    color: #94a3b8;
+  }
+  .article-card__excerpt {
+    color: #cbd5e1;
+  }
+  .article-card__read-more {
+    color: #60a5fa;
+    &:hover { color: #93c5fd; }
+  }
+
+  /* Post page */
+  .post-title {
+    color: #f1f5f9;
+  }
+  .post-meta {
+    color: #94a3b8;
+  }
+  .post-category {
+    background: #1e3a5f;
+    color: #93c5fd;
+  }
+  .post-content {
+    color: #cbd5e1;
+    h2, h3 {
+      color: #f1f5f9;
+    }
+    a {
+      color: #60a5fa;
+      &:hover { color: #93c5fd; }
+    }
+    blockquote {
+      background: #1e293b;
+      border-left-color: #60a5fa;
+      color: #cbd5e1;
+    }
+  }
+
+  /* Post footer */
+  .post-footer {
+    border-top-color: #334155;
+  }
+  .post-signoff {
+    border-bottom-color: #334155;
+  }
+  .post-thanks {
+    color: #cbd5e1;
+  }
+  .back-to-articles {
+    color: #60a5fa;
+    &:hover { color: #93c5fd; }
+  }
+
+  /* Connect section (home) */
+  .connect-section {
+    .connect-title {
+      color: #f1f5f9;
+    }
+    .connect-text {
+      color: #cbd5e1;
+    }
+  }
+
+  /* Badge base (already partially done, now complete) */
+  .badge-link {
+    background: #334155;
+    color: #f1f5f9;
+  }
+  .badge-github {
+    background: #6e7681;
+    color: #ffffff;
+  }
+  .badge-website {
+    background: #3b82f6;
+    color: #ffffff;
+  }
+  .badge-linkedin {
+    background: #3b82f6;
+    color: #ffffff;
+  }
+
+  /* Keep brand blue for interactive elements */
+  .btn, button {
+    background-color: #2563EB;
+    color: white;
+  }
 }
