@@ -413,3 +413,104 @@ a {
   align-items: center;
   vertical-align: middle;
 }
+
+/* ===== Get to know me badges ===== */
+.connect-section {
+  max-width: 800px;
+  margin: 3rem auto 2rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.connect-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.connect-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.badge-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Custom badge link styles – base */
+.badge-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s, box-shadow 0.2s;
+  background: #f3f4f6;   /* light background */
+  color: #1f2937;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.badge-link:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* GitHub badge */
+.badge-github {
+  background: #24292e;
+  color: #ffffff;
+}
+.badge-github::before {
+  content: "⬡";  /* simple placeholder; you can replace with a GitHub SVG icon */
+  font-size: 1.1rem;
+}
+
+/* Website badge */
+.badge-website {
+  background: #2563EB;
+  color: #ffffff;
+}
+.badge-website::before {
+  content: "🌐";
+}
+
+/* LinkedIn badge container – make the iframe match our badges */
+.linkedin-badge-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Dark mode adjustments for non‑LinkedIn badges */
+@media (prefers-color-scheme: dark) {
+  .connect-title {
+    color: #f3f4f6;
+  }
+  .connect-text {
+    color: #d1d5db;
+  }
+  .badge-link {
+    background: #374151;
+    color: #f9fafb;
+  }
+  .badge-github {
+    background: #6e7681; /* lighter GitHub dark */
+    color: #ffffff;
+  }
+  .badge-website {
+    background: #3b82f6; /* a bit lighter blue */
+    color: #ffffff;
+  }
+}
