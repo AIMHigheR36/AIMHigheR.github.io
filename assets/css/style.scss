@@ -605,19 +605,24 @@ a {
     }
   }
 
-/* Badges – pure white text */
+/* Badges – pure white text, high specificity */
+a.badge-link,
+a.badge-link:visited,
+a.badge-link:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+}
 .badge-link {
-    background: #334155;
-    color: #ffffff;
+  background: #334155;
 }
 .badge-github {
-    background: #6e7681;
+  background: #6e7681;
 }
 .badge-website {
-    background: #3b82f6;
+  background: #3b82f6;
 }
 .badge-linkedin {
-    background: #3b82f6;
+  background: #3b82f6;
 }
 
   /* Keep brand blue for interactive elements */
