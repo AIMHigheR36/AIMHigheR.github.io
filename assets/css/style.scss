@@ -408,12 +408,6 @@ a {
   }
 }
 
-#linkedin-badge-container {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-}
-
 /* ===== Get to know me badges ===== */
 .connect-section {
   max-width: 800px;
@@ -487,12 +481,6 @@ a {
   content: "🌐";
 }
 
-/* LinkedIn badge container – make the iframe match our badges */
-.linkedin-badge-container {
-  display: inline-flex;
-  align-items: center;
-}
-
 /* Dark mode adjustments for non‑LinkedIn badges */
 @media (prefers-color-scheme: dark) {
   .connect-title {
@@ -513,4 +501,21 @@ a {
     background: #3b82f6; /* a bit lighter blue */
     color: #ffffff;
   }
+}
+
+/* LinkedIn badge */
+.badge-linkedin {
+  background: #0A66C2;   /* LinkedIn brand blue */
+  color: #ffffff;
+}
+.badge-linkedin::before {
+  content: "in";
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-right: 0.2rem;
+}
+
+.badge-linkedin {
+  background: #3b82f6;   /* lighter blue for dark backgrounds */
+  color: #ffffff;
 }
