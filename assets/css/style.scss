@@ -605,23 +605,20 @@ a {
     }
   }
 
-  /* Badge base (already partially done, now complete) */
-  .badge-link {
+/* Badges – pure white text */
+.badge-link {
     background: #334155;
-    color: #f1f5f9;
-  }
-  .badge-github {
+    color: #ffffff;
+}
+.badge-github {
     background: #6e7681;
-    color: #ffffff;
-  }
-  .badge-website {
+}
+.badge-website {
     background: #3b82f6;
-    color: #ffffff;
-  }
-  .badge-linkedin {
+}
+.badge-linkedin {
     background: #3b82f6;
-    color: #ffffff;
-  }
+}
 
   /* Keep brand blue for interactive elements */
   .btn, button {
