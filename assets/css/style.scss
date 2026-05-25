@@ -1027,14 +1027,20 @@ a.badge-link:hover {
   content: "🌐";
 }
 
-/* LinkedIn container – hide fallback text link */
+/* LinkedIn container – force visible dimensions */
 #linkedin-badge-lg {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  min-height: 44px;
+  /* prevent collapsing */
+  overflow: visible;
 }
+/* Hide fallback link text inside the badge div */
 #linkedin-badge-lg .badge-base__link {
   display: none;
 }
-
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   .about-badges .badge-link-lg {
