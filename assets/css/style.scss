@@ -966,3 +966,80 @@ a.badge-link:hover {
     p, ul { color: #cbd5e1; }
   }
 }
+
+/* ===== About page – large badges ===== */
+.about-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+/* Large custom badge base */
+.badge-link-lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: #f3f4f6;
+  color: #1f2937;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: opacity 0.2s, box-shadow 0.2s;
+  min-width: 160px;          /* roughly match the LinkedIn badge width */
+  text-align: center;
+}
+
+.badge-link-lg:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Large GitHub badge */
+.badge-github-lg {
+  background: #24292e;
+  color: #ffffff;
+}
+.badge-github-lg::before {
+  content: "⬡";
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Large Website badge */
+.badge-website-lg {
+  background: #2563EB;
+  color: #ffffff;
+}
+.badge-website-lg::before {
+  content: "🌐";
+  margin-right: 0.5rem;
+}
+
+/* LinkedIn badge container – ensure the iframe aligns nicely */
+#linkedin-badge-lg {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Dark mode adjustments for large badges */
+@media (prefers-color-scheme: dark) {
+  .badge-link-lg {
+    background: #334155;
+    color: #f9fafb;
+  }
+  .badge-github-lg {
+    background: #6e7681;
+    color: #ffffff;
+  }
+  .badge-website-lg {
+    background: #3b82f6;
+    color: #ffffff;
+  }
+}
