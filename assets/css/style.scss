@@ -1219,17 +1219,14 @@ a.badge-link:hover {
   border-radius: 12px;
   border: 1px solid #e5e7eb;
 }
-
 .articles-empty a {
   color: #2563EB;
   font-weight: 600;
   text-decoration: underline;
 }
-
 .articles-empty a:hover {
   color: #1d4ed8;
 }
-
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   .articles-empty {
