@@ -53,30 +53,39 @@ I'm always open to connecting with people who care about doing meaningful work, 
 
 <script>
   (function() {
-    // 1. Set the LinkedIn badge theme based on system preference
-    var container = document.getElementById('linkedin-badge-lg');
-    if (!container) return;
-    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    var theme = prefersDark ? 'dark' : 'light';
+    function loadBadge() {
+      var container = document.getElementById('linkedin-badge-lg');
+      if (!container) return;
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = prefersDark ? 'dark' : 'light';
 
-    // Create the badge div with the correct theme
-    var badgeDiv = document.createElement('div');
-    badgeDiv.className = 'badge-base LI-profile-badge';
-    badgeDiv.setAttribute('data-locale', 'en_US');
-    badgeDiv.setAttribute('data-size', 'large');
-    badgeDiv.setAttribute('data-theme', theme);
-    badgeDiv.setAttribute('data-type', 'HORIZONTAL');
-    badgeDiv.setAttribute('data-vanity', 'almill36');
-    badgeDiv.setAttribute('data-version', 'v1');
-    badgeDiv.innerHTML = '<a class="badge-base__link LI-simple-link" href="https://bs.linkedin.com/in/almill36?trk=profile-badge">Alejandro M.</a>';
+      // Build the badge div
+      var badgeDiv = document.createElement('div');
+      badgeDiv.className = 'badge-base LI-profile-badge';
+      badgeDiv.setAttribute('data-locale', 'en_US');
+      badgeDiv.setAttribute('data-size', 'medium');
+      badgeDiv.setAttribute('data-theme', theme);
+      badgeDiv.setAttribute('data-type', 'HORIZONTAL');
+      badgeDiv.setAttribute('data-vanity', 'almill36');
+      badgeDiv.setAttribute('data-version', 'v1');
+      badgeDiv.innerHTML = '<a class="badge-base__link LI-simple-link" href="https://bs.linkedin.com/in/almill36?trk=profile-badge">Alejandro M.</a>';
+      container.appendChild(badgeDiv);
 
-    container.appendChild(badgeDiv);
+      // Load LinkedIn's script (without async/defer to avoid race conditions)
+      var script = document.createElement('script');
+      script.src = 'https://platform.linkedin.com/badges/js/profile.js';
+      document.head.appendChild(script);
+    }
 
-    // 2. Load the LinkedIn badge script
-    var script = document.createElement('script');
-    script.src = 'https://platform.linkedin.com/badges/js/profile.js';
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
+    // Ensure DOM is fully parsed
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadBadge);
+    } else {
+      loadBadge();
+    }
   })();
 </script>
+
+<noscript>
+  <a href="https://bs.linkedin.com/in/almill36" class="badge-link-lg badge-linkedin-lg" target="_blank" rel="noopener">LinkedIn</a>
+</noscript>
