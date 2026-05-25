@@ -61,13 +61,7 @@ permalink: /articles/
           card.style.display = 'none';
         }
       });
-
-      // Show/hide empty message
-      if (!hasVisible) {
-        emptyMsg.style.display = 'block';
-      } else {
-        emptyMsg.style.display = 'none';
-      }
+      emptyMsg.style.display = hasVisible ? 'none' : 'block';
     }
 
     btns.forEach(btn => {
@@ -75,13 +69,13 @@ permalink: /articles/
         btns.forEach(b => b.classList.remove('active'));
         this.classList.add('active');
         filter(this.getAttribute('data-category'));
+        // Scroll the button into view within the category bar
+        this.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
       });
     });
 
-    // Click "read something that is available" – reset to All
     showAllLink.addEventListener('click', function(e) {
       e.preventDefault();
-      // Activate the All button
       btns.forEach(b => b.classList.remove('active'));
       const allBtn = document.querySelector('.cat-btn[data-category="all"]');
       if (allBtn) {
@@ -98,20 +92,38 @@ permalink: /articles/
       rightArrow.style.visibility = scrollLeft >= maxScroll - 1 ? 'hidden' : 'visible';
     }
 
-    leftArrow.addEventListener('click', () => {
-      bar.scrollBy({ left: -200, behavior: 'smooth' });
-    });
-    rightArrow.addEventListener('click', () => {
-      bar.scrollBy({ left: 200, behavior: 'smooth' });
-    });
-
+    leftArrow.addEventListener('click', () => bar.scrollBy({ left: -200, behavior: 'smooth' }));
+    rightArrow.addEventListener('click', () => bar.scrollBy({ left: 200, behavior: 'smooth' }));
     bar.addEventListener('scroll', updateArrows);
     window.addEventListener('resize', updateArrows);
     updateArrows();
-
     if (bar.scrollWidth <= bar.clientWidth) {
       leftArrow.style.display = 'none';
       rightArrow.style.display = 'none';
     }
+
+    // ---- Initial filter from URL parameter ----
+    const params = new URLSearchParams(window.location.search);
+    const categoryParam = params.get('category');
+    if (categoryParam) {
+      // Find the button that matches the parameter
+      const targetBtn = document.querySelector(`.cat-btn[data-category="${categoryParam}"]`);
+      if (targetBtn) {
+        // Activate that button and filter
+        btns.forEach(b => b.classList.remove('active'));
+        targetBtn.classList.add('active');
+        filter(categoryParam);
+        // Scroll the category bar so the button is visible
+        targetBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      } else {
+        // Unknown category – fallback to All
+        const allBtn = document.querySelector('.cat-btn[data-category="all"]');
+        if (allBtn) {
+          allBtn.classList.add('active');
+          filter('all');
+        }
+      }
+    }
+    // If no parameter, the All button is already active from the HTML, so do nothing extra.
   })();
 </script>
