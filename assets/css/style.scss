@@ -845,14 +845,13 @@ a.badge-link:hover {
 
 /* ===== Site Navigation Bar ===== */
 .site-nav {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.92);
   border-bottom: 1px solid #e5e7eb;
   padding: 0.75rem 1rem;
   position: sticky;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(8px);
-  background: rgba(255,255,255,0.9);
 }
 
 .nav-container {
@@ -863,15 +862,31 @@ a.badge-link:hover {
   justify-content: space-between;
 }
 
-.nav-logo {
+/* Brand block (title + subtitle) */
+.nav-brand {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.nav-brand-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: #2563EB;
-  text-decoration: none;
   letter-spacing: -0.3px;
 }
 
+.nav-brand-sub {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: #6b7280;
+  margin-top: 1px;
+}
+
+/* Navigation links */
 .nav-links {
   display: flex;
   gap: 1.5rem;
@@ -884,6 +899,7 @@ a.badge-link:hover {
   color: #4b5563;
   text-decoration: none;
   transition: color 0.15s;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -893,12 +909,14 @@ a.badge-link:hover {
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   .site-nav {
-    background: rgba(15, 23, 42, 0.9);
+    background: rgba(15, 23, 42, 0.92);
     border-bottom-color: #334155;
-    backdrop-filter: blur(8px);
   }
-  .nav-logo {
+  .nav-brand-title {
     color: #60a5fa;
+  }
+  .nav-brand-sub {
+    color: #94a3b8;
   }
   .nav-link {
     color: #cbd5e1;
@@ -908,7 +926,7 @@ a.badge-link:hover {
   }
 }
 
-/* Mobile: stack logo and links */
+/* Mobile adjustments */
 @media (max-width: 600px) {
   .nav-container {
     flex-direction: column;
