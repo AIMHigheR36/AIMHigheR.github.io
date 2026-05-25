@@ -42,19 +42,35 @@ You'll also find links to my professional home on LinkedIn and my technical work
 
 I'm always open to connecting with people who care about doing meaningful work, growing intentionally, and maybe catching a basketball game somewhere along the way.
 
+## Let's Connect
+
+I'm always open to connecting with people who care about doing meaningful work, growing intentionally, and maybe catching a basketball game somewhere along the way.
+
 <div class="connect-block">
   <!-- Official LinkedIn badge (auto light/dark) -->
   <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="almill36" data-version="v1">
     <a class="badge-base__link LI-simple-link" href="https://bs.linkedin.com/in/almill36?trk=profile-badge">Alejandro M.</a>
   </div>
 
-  <!-- Custom cards (unchanged) -->
+  <!-- Custom cards -->
   <div class="connect-cards">
-    ...
+    <!-- GitHub card -->
+    <a href="https://github.com/AIMHigheR36" class="connect-card connect-card-github" target="_blank" rel="noopener">
+      <span class="connect-card-icon">⬡</span>
+      <span class="connect-card-title">AIMHigheR</span>
+      <span class="connect-card-sub">GitHub</span>
+    </a>
+
+    <!-- Website card -->
+    <a href="/" class="connect-card connect-card-website">
+      <span class="connect-card-icon">🌐</span>
+      <span class="connect-card-title">A.I.M.HigheR</span>
+      <span class="connect-card-sub">Alejandro Miller's personal website</span>
+    </a>
   </div>
 </div>
 
-<!-- Theme detection script (still needed) -->
+<!-- Auto-detect theme for badge -->
 <script>
   (function() {
     var badge = document.querySelector('.LI-profile-badge');
