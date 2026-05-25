@@ -829,3 +829,80 @@ a.badge-link:hover {
 }
 
 
+/* ===== Site Navigation Bar ===== */
+.site-nav {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.9);
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #2563EB;
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.nav-link:hover {
+  color: #2563EB;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .site-nav {
+    background: rgba(15, 23, 42, 0.9);
+    border-bottom-color: #334155;
+    backdrop-filter: blur(8px);
+  }
+  .nav-logo {
+    color: #60a5fa;
+  }
+  .nav-link {
+    color: #cbd5e1;
+  }
+  .nav-link:hover {
+    color: #93c5fd;
+  }
+}
+
+/* Mobile: stack logo and links */
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
