@@ -717,8 +717,8 @@ a.badge-link:hover {
   line-height: 1.7;
 }
 
-/* ===== Latest Article teaser ===== */
-.latest-article {
+/* ===== Latest Articles (centered squares) ===== */
+.latest-articles {
   max-width: 700px;
   margin: 2.5rem auto 0;
   padding: 0 1rem;
@@ -733,57 +733,79 @@ a.badge-link:hover {
   margin-bottom: 1rem;
 }
 
-.latest-card {
+.latest-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.latest-card-square {
+  width: 200px;                /* fixed width for each square */
+  aspect-ratio: 1 / 1;        /* forces perfect square */
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1.25rem;
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  text-align: left;
-}
-
-.latest-heading {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 0 0 0.35rem;
-}
-
-.latest-heading a {
-  color: #1f2937;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
-.latest-heading a:hover {
-  color: #2563EB;
+.latest-card-square:hover {
+  box-shadow: 0 6px 18px rgba(37,99,235,0.08);
+  transform: translateY(-2px);
 }
 
-.latest-date {
+.latest-card-date {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #6b7280;
   margin-bottom: 0.5rem;
+  display: block;
 }
 
-.latest-excerpt {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 0.95rem;
-  color: #4b5563;
-  line-height: 1.6;
+.latest-card-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.3;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.latest-read-more {
-  display: inline-block;
-  margin-top: 0.75rem;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600;
-  color: #2563EB;
-  text-decoration: none;
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .latest-title { color: #f1f5f9; }
+  .latest-card-square {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
+  }
+  .latest-card-square:hover {
+    box-shadow: 0 6px 18px rgba(96,165,250,0.1);
+  }
+  .latest-card-date { color: #94a3b8; }
+  .latest-card-heading { color: #f1f5f9; }
 }
 
-.latest-read-more:hover {
-  text-decoration: underline;
-  color: #1d4ed8;
+/* On very small screens, let the squares fill width but stay square */
+@media (max-width: 500px) {
+  .latest-card-square {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: auto;        /* allow natural height if content varies */
+    min-height: 200px;         /* ensure a decent tap target */
+  }
 }
 
 /* ===== Site footer (badge row) ===== */
@@ -816,19 +838,6 @@ a.badge-link:hover {
 
   .about-title { color: #f1f5f9; }
   .about-text { color: #cbd5e1; }
-
-  .latest-title { color: #f1f5f9; }
-  .latest-card {
-    background: #1e293b;
-    border-color: #334155;
-    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
-  }
-  .latest-heading a { color: #f1f5f9; }
-  .latest-heading a:hover { color: #93c5fd; }
-  .latest-date { color: #94a3b8; }
-  .latest-excerpt { color: #cbd5e1; }
-  .latest-read-more { color: #60a5fa; }
-  .latest-read-more:hover { color: #93c5fd; }
 
   .footer-text { color: #94a3b8; }
 }
