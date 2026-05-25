@@ -967,91 +967,106 @@ a.badge-link:hover {
   }
 }
 
-/* ===== About page – large badges (exact LinkedIn dimensions) ===== */
-.about-badges {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;   /* align tops, since heights are equal */
-  gap: 1.25rem;
-  flex-wrap: wrap;
-  margin: 2rem 0;
+/* ===== About page – Connect section (small badge + cards) ===== */
+.connect-block {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  text-align: center;
 }
 
-/* Large custom badge – matches LinkedIn official large size */
-.about-badges .badge-link-lg {
+/* LinkedIn badge container – reserved space to avoid layout jump */
+#linkedin-badge-sm {
+  display: inline-block;
+  min-width: 180px;
+  min-height: 190px;   /* enough for vertical badge */
+  margin-bottom: 2rem;
+}
+#linkedin-badge-sm .badge-base__link {
+  display: none;       /* hide fallback text link */
+}
+
+/* Two cards row */
+.connect-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+/* Individual card */
+.connect-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 330px;
-  height: 281px;               /* same total height as LinkedIn badge */
-  border-radius: 24px;         /* matches LinkedIn’s rounded corners */
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
+  width: 220px;
+  padding: 1.5rem 1rem;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   text-decoration: none;
-  background: #f3f4f6;
-  color: #1f2937;
-  box-shadow: 0 0 0 1px #ffffff inset;   /* subtle white border like LinkedIn */
-  transition: opacity 0.2s, box-shadow 0.2s;
-  padding: 16px;
-  box-sizing: border-box;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 
-/* Hover */
-.about-badges .badge-link-lg:hover {
-  opacity: 0.9;
-  box-shadow: 0 0 0 1px #ffffff inset, 0 4px 12px rgba(0,0,0,0.12);
+.connect-card:hover {
+  box-shadow: 0 6px 18px rgba(37,99,235,0.08);
+  transform: translateY(-2px);
 }
 
-/* Icons & text inside */
-.about-badges .badge-link-lg::before {
+/* Card icon */
+.connect-card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
   display: block;
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
 }
 
-.about-badges .badge-github-lg {
-  background: #24292e;
-  color: #ffffff;
-}
-.about-badges .badge-github-lg::before {
-  content: "⬡";
-}
-
-.about-badges .badge-website-lg {
-  background: #2563EB;
-  color: #ffffff;
-}
-.about-badges .badge-website-lg::before {
-  content: "🌐";
+/* Card title (main name) */
+.connect-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
 }
 
-/* LinkedIn container – force visible dimensions */
-#linkedin-badge-lg {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 200px;
-  min-height: 44px;
-  /* prevent collapsing */
-  overflow: visible;
+/* Card subtitle (description) */
+.connect-card-sub {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.3;
 }
-/* Hide fallback link text inside the badge div */
-#linkedin-badge-lg .badge-base__link {
-  display: none;
+
+/* GitHub specific colour accents (optional) */
+.connect-card-github .connect-card-icon {
+  color: #24292e;
 }
+.connect-card-website .connect-card-icon {
+  color: #2563EB;
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-  .about-badges .badge-link-lg {
-    background: #38434f;        /* LinkedIn dark header background */
-    color: #ffffff;
-    box-shadow: 0 0 0 1px #ffffff inset;
+  .connect-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
   }
-  .about-badges .badge-github-lg {
-    background: #6e7681;
+  .connect-card-title { color: #f1f5f9; }
+  .connect-card-sub   { color: #94a3b8; }
+  .connect-card-github .connect-card-icon { color: #8b949e; }
+  .connect-card-website .connect-card-icon { color: #60a5fa; }
+}
+
+/* On very small screens, let cards fill width */
+@media (max-width: 500px) {
+  .connect-cards {
+    flex-direction: column;
+    align-items: center;
   }
-  .about-badges .badge-website-lg {
-    background: #3b82f6;
+  .connect-card {
+    width: 100%;
+    max-width: 300px;
   }
 }
