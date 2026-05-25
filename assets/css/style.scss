@@ -967,36 +967,26 @@ a.badge-link:hover {
   }
 }
 
-/* ===== About page – Connect section (small badge + cards) ===== */
+/* ===== About page – Three large connect cards ===== */
 .connect-block {
-  max-width: 700px;
+  max-width: 800px;
   margin: 2rem auto 0;
   text-align: center;
 }
 
-/* Fallback link styling (visible until iframe loads) */
-.badge-base__link {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600;
-  color: #2563EB;
-  text-decoration: none;
-}
-
-/* Two cards row */
 .connect-cards {
   display: flex;
   justify-content: center;
-  gap: 1.25rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-/* Individual card */
 .connect-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 220px;
+  justify-content: flex-start;
+  width: 240px;
   padding: 1.5rem 1rem;
   border-radius: 16px;
   background: #ffffff;
@@ -1004,6 +994,7 @@ a.badge-link:hover {
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   text-decoration: none;
   transition: box-shadow 0.2s, transform 0.2s;
+  word-wrap: break-word;        /* allow long text to wrap */
 }
 
 .connect-card:hover {
@@ -1011,31 +1002,47 @@ a.badge-link:hover {
   transform: translateY(-2px);
 }
 
-/* Card icon */
 .connect-card-icon {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
   display: block;
+  line-height: 1;
 }
 
-/* Card title (main name) */
 .connect-card-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   color: #1f2937;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
+  text-align: center;
 }
 
-/* Card subtitle (description) */
 .connect-card-sub {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 0.85rem;
   color: #6b7280;
-  line-height: 1.3;
+  line-height: 1.4;
+  text-align: center;
 }
 
-/* GitHub specific colour accents (optional) */
+/* LinkedIn icon styling – mimic the 'in' logo */
+.connect-card-linkedin .connect-card-icon {
+  background: #0A66C2;
+  color: #ffffff;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* GitHub & website icons keep their native colour */
 .connect-card-github .connect-card-icon {
   color: #24292e;
 }
@@ -1054,16 +1061,21 @@ a.badge-link:hover {
   .connect-card-sub   { color: #94a3b8; }
   .connect-card-github .connect-card-icon { color: #8b949e; }
   .connect-card-website .connect-card-icon { color: #60a5fa; }
+  /* LinkedIn icon stays white on blue even in dark mode */
+  .connect-card-linkedin .connect-card-icon {
+    background: #0A66C2;
+    color: #ffffff;
+  }
 }
 
-/* On very small screens, let cards fill width */
-@media (max-width: 500px) {
+/* Stack on mobile */
+@media (max-width: 700px) {
   .connect-cards {
     flex-direction: column;
     align-items: center;
   }
   .connect-card {
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
   }
 }
