@@ -967,69 +967,70 @@ a.badge-link:hover {
   }
 }
 
-/* ===== About page – large badges (specific and sized) ===== */
+/* ===== About page – large badges (exact LinkedIn dimensions) ===== */
 .about-badges {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;   /* align tops, since heights are equal */
   gap: 1.25rem;
   flex-wrap: wrap;
   margin: 2rem 0;
 }
 
-/* Large badge base – matches LinkedIn official large size */
+/* Large custom badge – matches LinkedIn official large size */
 .about-badges .badge-link-lg {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 200px;                 /* wide enough to match LinkedIn */
-  padding: 0.7rem 1.5rem;
-  border-radius: 9999px;
+  width: 330px;
+  height: 281px;               /* same total height as LinkedIn badge */
+  border-radius: 24px;         /* matches LinkedIn’s rounded corners */
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
   background: #f3f4f6;
   color: #1f2937;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 0 0 1px #ffffff inset;   /* subtle white border like LinkedIn */
   transition: opacity 0.2s, box-shadow 0.2s;
-  line-height: 1.2;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
-/* Hover states */
+/* Hover */
 .about-badges .badge-link-lg:hover {
   opacity: 0.9;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 0 0 1px #ffffff inset, 0 4px 12px rgba(0,0,0,0.12);
 }
 
-/* Large GitHub badge */
+/* Icons & text inside */
+.about-badges .badge-link-lg::before {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
 .about-badges .badge-github-lg {
   background: #24292e;
   color: #ffffff;
 }
 .about-badges .badge-github-lg::before {
   content: "⬡";
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
 }
 
-/* Large Website badge */
 .about-badges .badge-website-lg {
   background: #2563EB;
   color: #ffffff;
 }
 .about-badges .badge-website-lg::before {
   content: "🌐";
-  margin-right: 0.5rem;
-  font-size: 1.2rem;
 }
 
-/* LinkedIn container – hide fallback link text */
+/* LinkedIn container – hide fallback text link */
 #linkedin-badge-lg {
   display: inline-flex;
-  align-items: center;
 }
-/* Hide the placeholder link inside the LinkedIn badge div */
 #linkedin-badge-lg .badge-base__link {
   display: none;
 }
@@ -1037,15 +1038,14 @@ a.badge-link:hover {
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   .about-badges .badge-link-lg {
-    background: #334155;
-    color: #f9fafb;
+    background: #38434f;        /* LinkedIn dark header background */
+    color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff inset;
   }
   .about-badges .badge-github-lg {
     background: #6e7681;
-    color: #ffffff;
   }
   .about-badges .badge-website-lg {
     background: #3b82f6;
-    color: #ffffff;
   }
 }
