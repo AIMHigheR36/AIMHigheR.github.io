@@ -10,11 +10,6 @@ layout: default
     {% endif %}
     <h1 class="hero-name">Alejandro Miller</h1>
     <p class="hero-tagline">A quietly determined financial professional who builds systems that outlast him.</p>
-    <nav class="hero-links" aria-label="Primary navigation">
-      <a href="/articles/" class="hero-link">Articles</a>
-      <a href="https://github.com/AIMHigheR36" class="hero-link" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://bs.linkedin.com/in/almill36" class="hero-link" target="_blank" rel="noopener">LinkedIn</a>
-    </nav>
   </div>
 </section>
 
