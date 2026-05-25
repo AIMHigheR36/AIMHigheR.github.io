@@ -54,19 +54,23 @@ I'm always open to connecting with people who care about doing meaningful work, 
       <span class="connect-card-title">Alejandro M.</span>
       <span class="connect-card-sub">Finance Analyst, FP&A | Profitability &amp; Segmentation | FMVA® | BIDA® | ACCA Student | Building Clarity from Complexity<br>Scotiabank | Harvard Business School Online</span>
     </a>
-
     <!-- GitHub card -->
     <a href="https://github.com/AIMHigheR36" class="connect-card connect-card-github" target="_blank" rel="noopener">
       <span class="connect-card-icon">⬡</span>
       <span class="connect-card-title">AIMHigheR</span>
       <span class="connect-card-sub">GitHub</span>
     </a>
-
     <!-- Website card -->
     <a href="/" class="connect-card connect-card-website">
       <span class="connect-card-icon">🌐</span>
       <span class="connect-card-title">A.I.M.HigheR</span>
       <span class="connect-card-sub">Alejandro Miller's personal website</span>
     </a>
+    <!-- Tableau card -->
+<a href="https://public.tableau.com/app/profile/alejandro.miller7081/vizzes" class="connect-card connect-card-tableau" target="_blank" rel="noopener">
+  <span class="connect-card-icon">📊</span>
+  <span class="connect-card-title">Tableau Public</span>
+  <span class="connect-card-sub">My dashboards &amp; vizzes</span>
+</a>    
   </div>
 </div>
