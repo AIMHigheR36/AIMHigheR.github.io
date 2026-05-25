@@ -912,3 +912,48 @@ a.badge-link:hover {
   }
 }
 
+/* ===== About Page ===== */
+.about-content {
+  max-width: 760px;
+  margin: 0 auto;
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #374151;
+    margin-bottom: 1.25rem;
+  }
+
+  ul {
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.75;
+    color: #374151;
+  }
+}
+
+/* Dark mode for about page */
+@media (prefers-color-scheme: dark) {
+  .about-content {
+    h2, h3 { color: #f1f5f9; }
+    p, ul { color: #cbd5e1; }
+  }
+}
