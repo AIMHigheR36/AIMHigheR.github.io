@@ -12,4 +12,4 @@ remote_theme: pages-themes/cayman@v0.2.0   # A clean, minimal theme; you can cha
 plugins:
   - jekyll-remote-theme
 
-
+author-image: /assets/images/AM.png
