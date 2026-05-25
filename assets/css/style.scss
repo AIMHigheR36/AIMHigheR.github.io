@@ -631,3 +631,201 @@ a.badge-link:hover {
     color: white;
   }
 }
+
+/* ===== Homepage: Hero ===== */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-photo {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #2563EB;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.hero-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 0.5rem;
+}
+
+.hero-tagline {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.15rem;
+  color: #4b5563;
+  margin-bottom: 1.75rem;
+  font-style: italic;
+}
+
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-link {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  background: #2563EB;
+  color: #fff !important;
+  border-radius: 9999px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.hero-link:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  color: #fff !important;
+}
+
+/* ===== About section ===== */
+.about {
+  max-width: 700px;
+  margin: 2.5rem auto 0;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.about-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+}
+
+.about-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+/* ===== Latest Article teaser ===== */
+.latest-article {
+  max-width: 700px;
+  margin: 2.5rem auto 0;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.latest-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.latest-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  text-align: left;
+}
+
+.latest-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+}
+
+.latest-heading a {
+  color: #1f2937;
+  text-decoration: none;
+}
+
+.latest-heading a:hover {
+  color: #2563EB;
+}
+
+.latest-date {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.latest-excerpt {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.latest-read-more {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  color: #2563EB;
+  text-decoration: none;
+}
+
+.latest-read-more:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+/* ===== Site footer (badge row) ===== */
+.site-footer {
+  max-width: 700px;
+  margin: 3rem auto 2rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.footer-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+/* Dark‑mode additions for the new sections */
+@media (prefers-color-scheme: dark) {
+  .hero-name { color: #f1f5f9; }
+  .hero-tagline { color: #cbd5e1; }
+  .hero-link {
+    background: #3b82f6;
+    color: #fff !important;
+  }
+  .hero-link:hover {
+    background: #2563EB;
+    color: #fff !important;
+  }
+
+  .about-title { color: #f1f5f9; }
+  .about-text { color: #cbd5e1; }
+
+  .latest-title { color: #f1f5f9; }
+  .latest-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
+  }
+  .latest-heading a { color: #f1f5f9; }
+  .latest-heading a:hover { color: #93c5fd; }
+  .latest-date { color: #94a3b8; }
+  .latest-excerpt { color: #cbd5e1; }
+  .latest-read-more { color: #60a5fa; }
+  .latest-read-more:hover { color: #93c5fd; }
+
+  .footer-text { color: #94a3b8; }
+}
+
+
