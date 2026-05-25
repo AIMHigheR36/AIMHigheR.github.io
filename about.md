@@ -47,13 +47,14 @@ I'm always open to connecting with people who care about doing meaningful work, 
 I'm always open to connecting with people who care about doing meaningful work, growing intentionally, and maybe catching a basketball game somewhere along the way.
 
 <div class="connect-block">
-  <!-- Official LinkedIn badge (auto light/dark) -->
-  <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="almill36" data-version="v1">
-    <a class="badge-base__link LI-simple-link" href="https://bs.linkedin.com/in/almill36?trk=profile-badge">Alejandro M.</a>
-  </div>
-
-  <!-- Custom cards -->
   <div class="connect-cards">
+    <!-- LinkedIn card -->
+    <a href="https://bs.linkedin.com/in/almill36" class="connect-card connect-card-linkedin" target="_blank" rel="noopener">
+      <span class="connect-card-icon">in</span>
+      <span class="connect-card-title">Alejandro M.</span>
+      <span class="connect-card-sub">Finance Analyst, FP&A | Profitability &amp; Segmentation | FMVA® | BIDA® | ACCA Student | Building Clarity from Complexity<br>Scotiabank | Harvard Business School Online</span>
+    </a>
+
     <!-- GitHub card -->
     <a href="https://github.com/AIMHigheR36" class="connect-card connect-card-github" target="_blank" rel="noopener">
       <span class="connect-card-icon">⬡</span>
@@ -69,16 +70,3 @@ I'm always open to connecting with people who care about doing meaningful work, 
     </a>
   </div>
 </div>
-
-<!-- Auto-detect theme for badge -->
-<script>
-  (function() {
-    var badge = document.querySelector('.LI-profile-badge');
-    if (!badge) return;
-    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    badge.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-  })();
-</script>
-
-<!-- LinkedIn badge rendering script -->
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
