@@ -40,8 +40,9 @@ layout: default
 <footer class="site-footer">
   <p class="footer-text">Let's connect</p>
   <div class="badge-row">
-    <a href="https://bs.linkedin.com/in/almill36" class="badge-link badge-linkedin" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://github.com/AIMHigheR36" class="badge-link badge-github" target="_blank" rel="noopener">GitHub</a>
-    <a href="/" class="badge-link badge-website">aimhigher.dev</a>
-  </div>
+  <a href="https://bs.linkedin.com/in/almill36" class="badge-link badge-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+  <a href="https://github.com/AIMHigheR36" class="badge-link badge-github" target="_blank" rel="noopener">GitHub</a>
+  <a href="/" class="badge-link badge-website">aimhigher.dev</a>
+  <a href="https://public.tableau.com/app/profile/alejandro.miller7081/vizzes" class="badge-link badge-tableau" target="_blank" rel="noopener">Tableau</a>
+</div>
 </footer>
