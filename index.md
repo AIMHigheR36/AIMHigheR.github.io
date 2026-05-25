@@ -23,22 +23,17 @@ layout: default
   </p>
 </section>
 
-<!-- ===== LATEST ARTICLE ===== -->
-<section class="latest-article">
-  <h2 class="latest-title">Latest Article</h2>
-  {% assign latest = site.posts.first %}
-  {% if latest %}
-    <article class="latest-card">
-      <h3 class="latest-heading">
-        <a href="{{ latest.url }}">{{ latest.title }}</a>
-      </h3>
-      <p class="latest-date">{{ latest.date | date: "%B %d, %Y" }}</p>
-      <p class="latest-excerpt">{{ latest.excerpt | strip_html | truncatewords: 25 }}</p>
-      <a href="{{ latest.url }}" class="latest-read-more">Read more →</a>
-    </article>
-  {% else %}
-    <p class="latest-empty">No articles yet. Check back soon.</p>
-  {% endif %}
+<!-- ===== LATEST ARTICLES ===== -->
+<section class="latest-articles">
+  <h2 class="latest-title">Latest Articles</h2>
+  <div class="latest-grid">
+    {% for post in site.posts limit:3 %}
+      <a href="{{ post.url }}" class="latest-card-square">
+        <span class="latest-card-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        <h3 class="latest-card-heading">{{ post.title }}</h3>
+      </a>
+    {% endfor %}
+  </div>
 </section>
 
 <!-- ===== FOOTER (quick links) ===== -->
