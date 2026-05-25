@@ -34,7 +34,30 @@ permalink: /articles/
   {% endfor %}
 </div>
 
-<!-- ===== Filtering & Scroll Script ===== -->
+<!-- ===== Category Filter Bar ===== -->
+... (keep existing category bar) ...
+
+<!-- ===== Article Cards ===== -->
+<div class="articles-list" id="articlesList">
+  {% for post in site.posts %}
+    <article class="article-card" data-category="{{ post.categories | join: ',' }}">
+      <h2 class="article-card__title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      <p class="article-card__date">{{ post.date | date: "%B %d, %Y" }}</p>
+      {% if post.excerpt %}
+        <p class="article-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+      <a href="{{ post.url }}" class="article-card__read-more">Read more →</a>
+    </article>
+  {% endfor %}
+</div>
+
+<!-- Empty state message -->
+<div class="articles-empty" id="articlesEmpty" style="display:none;">
+  <p>Articles coming soon … <a href="#" id="showAllLink">read something that is available</a>.</p>
+</div>
+
 <script>
   (function() {
     const bar = document.getElementById('categoryBar');
@@ -42,17 +65,28 @@ permalink: /articles/
     const rightArrow = document.getElementById('catArrowRight');
     const cards = document.querySelectorAll('.article-card');
     const btns = document.querySelectorAll('.cat-btn');
+    const emptyMsg = document.getElementById('articlesEmpty');
+    const showAllLink = document.getElementById('showAllLink');
 
     // ---- Filtering ----
     function filter(category) {
+      let hasVisible = false;
       cards.forEach(card => {
         const cats = card.getAttribute('data-category').split(',');
         if (category === 'all' || cats.includes(category)) {
           card.style.display = '';
+          hasVisible = true;
         } else {
           card.style.display = 'none';
         }
       });
+
+      // Show/hide empty message
+      if (!hasVisible) {
+        emptyMsg.style.display = 'block';
+      } else {
+        emptyMsg.style.display = 'none';
+      }
     }
 
     btns.forEach(btn => {
@@ -63,31 +97,37 @@ permalink: /articles/
       });
     });
 
+    // Click "read something that is available" – reset to All
+    showAllLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      // Activate the All button
+      btns.forEach(b => b.classList.remove('active'));
+      const allBtn = document.querySelector('.cat-btn[data-category="all"]');
+      if (allBtn) {
+        allBtn.classList.add('active');
+        filter('all');
+      }
+    });
+
     // ---- Arrow scrolling ----
     function updateArrows() {
       const scrollLeft = bar.scrollLeft;
       const maxScroll = bar.scrollWidth - bar.clientWidth;
-      // show/hide left arrow
       leftArrow.style.visibility = scrollLeft <= 1 ? 'hidden' : 'visible';
-      // show/hide right arrow
       rightArrow.style.visibility = scrollLeft >= maxScroll - 1 ? 'hidden' : 'visible';
     }
 
     leftArrow.addEventListener('click', () => {
       bar.scrollBy({ left: -200, behavior: 'smooth' });
     });
-
     rightArrow.addEventListener('click', () => {
       bar.scrollBy({ left: 200, behavior: 'smooth' });
     });
 
     bar.addEventListener('scroll', updateArrows);
     window.addEventListener('resize', updateArrows);
-
-    // Initial check
     updateArrows();
 
-    // If bar content doesn't overflow, hide arrows completely
     if (bar.scrollWidth <= bar.clientWidth) {
       leftArrow.style.display = 'none';
       rightArrow.style.display = 'none';
