@@ -34,25 +34,6 @@ permalink: /articles/
   {% endfor %}
 </div>
 
-<!-- ===== Category Filter Bar ===== -->
-... (keep existing category bar) ...
-
-<!-- ===== Article Cards ===== -->
-<div class="articles-list" id="articlesList">
-  {% for post in site.posts %}
-    <article class="article-card" data-category="{{ post.categories | join: ',' }}">
-      <h2 class="article-card__title">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h2>
-      <p class="article-card__date">{{ post.date | date: "%B %d, %Y" }}</p>
-      {% if post.excerpt %}
-        <p class="article-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-      {% endif %}
-      <a href="{{ post.url }}" class="article-card__read-more">Read more →</a>
-    </article>
-  {% endfor %}
-</div>
-
 <!-- Empty state message -->
 <div class="articles-empty" id="articlesEmpty" style="display:none;">
   <p>Articles coming soon … <a href="#" id="showAllLink">read something that is available</a>.</p>
