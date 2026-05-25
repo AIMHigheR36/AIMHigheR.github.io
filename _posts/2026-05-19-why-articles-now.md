@@ -2,7 +2,7 @@
 layout: post
 title: "The Next Step in My Journey: Why Articles, and Why Now"
 date: 2026-05-19
-categories: the-platform, the-person
+categories: the-platform the-person
 ---
 
 ## The First Post
