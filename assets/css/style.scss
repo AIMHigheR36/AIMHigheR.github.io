@@ -3,91 +3,250 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito+Sans:ital,wght@0,400;0,600;1,400&display=swap');
 
-// apply fonts
+/* ===== 1. GLOBAL BASE STYLES ===== */
 body {
   font-family: 'Nunito Sans', sans-serif;
+  background-color: #F8FAFC;
+  color: #1E293B;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
-@import "jekyll-theme-cayman";
-
-// Custom styles
-
-.page-header {
-  display: none;
-}
-
-.page-header {
-  background-color: #2563EB;
-  background-image: none;
-}
-.page-header .project-name {
-  color: #FFFFFF;
-}
-.page-header .project-tagline {
-  color: #E2E8F0;
-}
-body {
-  background-color: #F8FAFC;
-  color: #1E293B;
-}
 a {
   color: #2563EB;
 }
 
-/* Articles listing page */
-.post-preview {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #e2e8f0;
+@import "jekyll-theme-cayman";
+
+/* Hide Cayman’s default header */
+.page-header {
+  display: none;
 }
 
-.post-preview:last-child {
-  border-bottom: none;
+/* ===== 2. SITE NAVIGATION BAR ===== */
+.site-nav {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
 }
 
-.post-preview h2 {
-  margin-bottom: 0.25rem;
-  font-family: 'Montserrat', sans-serif;
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.post-preview h2 a {
-  color: #1E293B;
+.nav-brand {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
-  transition: color 0.2s;
+  line-height: 1.2;
 }
 
-.post-preview h2 a:hover {
+.nav-brand-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #2563EB;
+  letter-spacing: -0.3px;
+}
+
+.nav-brand-sub {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: #6b7280;
+  margin-top: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
   color: #2563EB;
 }
 
-.post-meta {
-  font-size: 0.9rem;
-  color: #64748B;
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .nav-links {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* ===== 3. HOMEPAGE ===== */
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-photo {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #2563EB;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.hero-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 0.5rem;
+}
+
+.hero-tagline {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.15rem;
+  color: #4b5563;
+  margin-bottom: 1.75rem;
+  font-style: italic;
+}
+
+/* About section (homepage) */
+.about {
+  max-width: 700px;
+  margin: 2.5rem auto 0;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.about-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
   margin-bottom: 0.75rem;
 }
 
-.post-preview p {
-  color: #334155;
-  line-height: 1.6;
+.about-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.7;
 }
 
-.post-preview a[href*="Read more"] {
-  display: inline-block;
-  margin-top: 0.5rem;
-  font-weight: 600;
-  color: #2563EB;
+/* Latest Articles (centered squares) */
+.latest-articles {
+  max-width: 700px;
+  margin: 2.5rem auto 0;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.latest-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.latest-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.latest-card-square {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
-.post-preview a[href*="Read more"]:hover {
-  text-decoration: underline;
+.latest-card-square:hover {
+  box-shadow: 0 6px 18px rgba(37,99,235,0.08);
+  transform: translateY(-2px);
 }
 
+.latest-card-date {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  display: block;
+}
 
-/* ===== Articles List – Card Layout ===== */
+.latest-card-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.3;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  .latest-card-square {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: auto;
+    min-height: 200px;
+  }
+}
+
+/* Site footer (badge row) */
+.site-footer {
+  max-width: 700px;
+  margin: 3rem auto 2rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.footer-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+/* ===== 4. ARTICLES LIST (Cards) ===== */
 .articles-list {
   max-width: 800px;
   margin: 2rem auto;
@@ -156,7 +315,6 @@ a {
   text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .article-card {
     padding: 1.25rem;
@@ -166,14 +324,13 @@ a {
   }
 }
 
-/* ===== Individual Post Page ===== */
+/* ===== 5. INDIVIDUAL POST PAGE ===== */
 .post {
   max-width: 760px;
   margin: 2.5rem auto;
   padding: 0 1.25rem;
 }
 
-/* Title */
 .post-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.4rem;
@@ -183,7 +340,6 @@ a {
   margin-bottom: 0.5rem;
 }
 
-/* Meta (date & categories) */
 .post-meta {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 0.95rem;
@@ -204,9 +360,9 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
-/* Content styling */
 .post-content {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.1rem;
@@ -280,37 +436,13 @@ a {
   margin: 2rem 0;
 }
 
-/* Footer / back link */
+/* Post footer */
 .post-footer {
   margin-top: 3rem;
   padding-top: 1.5rem;
   border-top: 1px solid #e5e7eb;
 }
 
-.back-to-articles {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600;
-  color: #2563EB;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.back-to-articles:hover {
-  text-decoration: underline;
-  color: #1d4ed8;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .post-title {
-    font-size: 1.8rem;
-  }
-  .post-content {
-    font-size: 1rem;
-  }
-}
-
-/* ===== Post Footer – Signature & Links ===== */
 .post-signoff {
   text-align: center;
   margin-bottom: 2rem;
@@ -331,25 +463,42 @@ a {
   font-size: 0.9rem;
 }
 
-/* Floating image – right side */
+.back-to-articles {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  color: #2563EB;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.back-to-articles:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+/* Floating images & centering */
 .post-float-right {
   float: right;
-  max-width: 250px;        /* adjust to your preferred size */
+  max-width: 250px;
   width: 100%;
-  margin: 0 0 1.25rem 1.75rem;  /* top right bottom left */
+  margin: 0 0 1.25rem 1.75rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-/* Clear the float after the content so it doesn't break layout below */
 .post-content::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive: on small screens, stop floating and center the image */
 @media (max-width: 600px) {
+  .post-title {
+    font-size: 1.8rem;
+  }
+  .post-content {
+    font-size: 1rem;
+  }
   .post-float-right {
     float: none;
     display: block;
@@ -358,7 +507,6 @@ a {
   }
 }
 
-/* Center an image in the post flow */
 .post-center {
   display: block;
   margin: 2rem auto;
@@ -366,18 +514,18 @@ a {
   border-radius: 8px;
 }
 
-/* Side-by-side image pair (badges) */
+/* Side-by-side image pair */
 .badge-pair {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   margin: 2rem 0;
-  flex-wrap: wrap;         /* allows stacking on very narrow screens */
+  flex-wrap: wrap;
 }
 
 .badge-pair__img {
-  max-width: 280px;        /* adjust to your preferred badge size */
+  max-width: 280px;
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -385,7 +533,6 @@ a {
   object-fit: contain;
 }
 
-/* Mobile: stack vertically */
 @media (max-width: 600px) {
   .badge-pair {
     flex-direction: column;
@@ -396,570 +543,7 @@ a {
   }
 }
 
-/* ===== Get to know me badges ===== */
-.connect-section {
-  max-width: 800px;
-  margin: 3rem auto 2rem;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.connect-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 0.5rem;
-}
-
-.connect-text {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1rem;
-  color: #4b5563;
-  margin-bottom: 1.5rem;
-}
-
-.badge-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-/* Custom badge link styles – base */
-.badge-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 9999px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: opacity 0.2s, box-shadow 0.2s;
-  background: #f3f4f6;   /* light background */
-  color: #1f2937;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-.badge-link:hover {
-  opacity: 0.9;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* GitHub badge */
-.badge-github {
-  background: #24292e;
-  color: #ffffff;
-}
-.badge-github::before {
-  content: "⬡";  /* simple placeholder; you can replace with a GitHub SVG icon */
-  font-size: 1.1rem;
-}
-
-/* Website badge */
-.badge-website {
-  background: #2563EB;
-  color: #ffffff;
-}
-.badge-website::before {
-  content: "🌐";
-}
-
-/* LinkedIn badge */
-.badge-linkedin {
-  background: #0A66C2;   /* LinkedIn brand blue */
-  color: #ffffff;
-}
-.badge-linkedin::before {
-  content: "in";
-  font-weight: 700;
-  font-size: 1.1rem;
-  margin-right: 0.2rem;
-}
-
-/* Tableau badge */
-.badge-tableau {
-  background: #0D9488;   /* teal-600, distinct from other blues */
-  color: #ffffff;
-}
-.badge-tableau::before {
-  content: "📊";
-  margin-right: 0.3rem;
-}
-
-/* ===== Full Site Dark Mode ===== */
-@media (prefers-color-scheme: dark) {
-  /* Base */
-  body {
-    background-color: #0f172a;  /* deep navy */
-    color: #e2e8f0;
-  }
-
-  a {
-    color: #60a5fa;  /* lighter blue for readability */
-  }
-.badge-tableau {
-  background: #14b8a6;   /* teal-400 for dark backgrounds */
-  color: #ffffff;
-}
-  
-  /* Cayman theme header */
-  .page-header {
-    background-color: #1e293b;
-    background-image: none;
-  }
-  .page-header .project-name {
-    color: #f1f5f9;
-  }
-  .page-header .project-tagline {
-    color: #cbd5e1;
-  }
-
-  /* Main content container */
-  .main-content {
-    background-color: #1e293b;
-    color: #e2e8f0;
-    h1, h2, h3, h4, h5, h6 {
-      color: #f1f5f9;
-    }
-    p, li {
-      color: #cbd5e1;
-    }
-    a {
-      color: #93c5fd;
-      &:hover {
-        color: #bfdbfe;
-      }
-    }
-    blockquote {
-      background: #334155;
-      border-left-color: #60a5fa;
-      color: #cbd5e1;
-    }
-    code {
-      background: #334155;
-      color: #f1f5f9;
-    }
-    pre {
-      background: #0f172a;
-      border: 1px solid #334155;
-    }
-  }
-
-  /* Article cards (listing page) */
-  .article-card {
-    background: #1e293b;
-    border-color: #334155;
-    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
-  }
-  .article-card__title a {
-    color: #f1f5f9;
-    &:hover { color: #93c5fd; }
-  }
-  .article-card__date {
-    color: #94a3b8;
-  }
-  .article-card__excerpt {
-    color: #cbd5e1;
-  }
-  .article-card__read-more {
-    color: #60a5fa;
-    &:hover { color: #93c5fd; }
-  }
-
-  /* Post page */
-  .post-title {
-    color: #f1f5f9;
-  }
-  .post-meta {
-    color: #94a3b8;
-  }
-  .post-category {
-    background: #1e3a5f;
-    color: #93c5fd;
-  }
-  .post-content {
-    color: #cbd5e1;
-    h2, h3 {
-      color: #f1f5f9;
-    }
-    a {
-      color: #60a5fa;
-      &:hover { color: #93c5fd; }
-    }
-    blockquote {
-      background: #1e293b;
-      border-left-color: #60a5fa;
-      color: #cbd5e1;
-    }
-  }
-
-  /* Post footer */
-  .post-footer {
-    border-top-color: #334155;
-  }
-  .post-signoff {
-    border-bottom-color: #334155;
-  }
-  .post-thanks {
-    color: #cbd5e1;
-  }
-  .back-to-articles {
-    color: #60a5fa;
-    &:hover { color: #93c5fd; }
-  }
-
-  /* Connect section (home) */
-  .connect-section {
-    .connect-title {
-      color: #f1f5f9;
-    }
-    .connect-text {
-      color: #cbd5e1;
-    }
-  }
-
-/* Badges – pure white text, high specificity */
-a.badge-link,
-a.badge-link:visited,
-a.badge-link:hover {
-  color: #ffffff !important;
-  text-decoration: none;
-}
-.badge-link {
-  background: #334155;
-}
-.badge-github {
-  background: #6e7681;
-}
-.badge-website {
-  background: #3b82f6;
-}
-.badge-linkedin {
-  background: #3b82f6;
-}
-
-  /* Keep brand blue for interactive elements */
-  .btn, button {
-    background-color: #2563EB;
-    color: white;
-  }
-}
-
-/* ===== Homepage: Hero ===== */
-.hero {
-  text-align: center;
-  padding: 3rem 1rem 2rem;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.hero-photo {
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  border: 3px solid #2563EB;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.hero-name {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1f2937;
-  margin: 0 0 0.5rem;
-}
-
-.hero-tagline {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.15rem;
-  color: #4b5563;
-  margin-bottom: 1.75rem;
-  font-style: italic;
-}
-
-.hero-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.hero-link {
-  display: inline-block;
-  padding: 0.6rem 1.4rem;
-  background: #2563EB;
-  color: #fff !important;
-  border-radius: 9999px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600;
-  font-size: 0.95rem;
-  text-decoration: none;
-  transition: background 0.2s, transform 0.1s;
-}
-
-.hero-link:hover {
-  background: #1d4ed8;
-  transform: translateY(-1px);
-  color: #fff !important;
-}
-
-/* ===== About section ===== */
-.about {
-  max-width: 700px;
-  margin: 2.5rem auto 0;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.about-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 0.75rem;
-}
-
-.about-text {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.05rem;
-  color: #4b5563;
-  line-height: 1.7;
-}
-
-/* ===== Latest Articles (centered squares) ===== */
-.latest-articles {
-  max-width: 700px;
-  margin: 2.5rem auto 0;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.latest-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #1f2937;
-  margin-bottom: 1rem;
-}
-
-.latest-grid {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.latest-card-square {
-  width: 200px;                /* fixed width for each square */
-  aspect-ratio: 1 / 1;        /* forces perfect square */
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 1.25rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-  cursor: pointer;
-  box-sizing: border-box;
-}
-
-.latest-card-square:hover {
-  box-shadow: 0 6px 18px rgba(37,99,235,0.08);
-  transform: translateY(-2px);
-}
-
-.latest-card-date {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 0.8rem;
-  color: #6b7280;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
-.latest-card-heading {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #1f2937;
-  line-height: 1.3;
-  margin: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  .latest-title { color: #f1f5f9; }
-  .latest-card-square {
-    background: #1e293b;
-    border-color: #334155;
-    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
-  }
-  .latest-card-square:hover {
-    box-shadow: 0 6px 18px rgba(96,165,250,0.1);
-  }
-  .latest-card-date { color: #94a3b8; }
-  .latest-card-heading { color: #f1f5f9; }
-}
-
-/* On very small screens, let the squares fill width but stay square */
-@media (max-width: 500px) {
-  .latest-card-square {
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: auto;        /* allow natural height if content varies */
-    min-height: 200px;         /* ensure a decent tap target */
-  }
-}
-
-/* ===== Site footer (badge row) ===== */
-.site-footer {
-  max-width: 700px;
-  margin: 3rem auto 2rem;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.footer-text {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1rem;
-  color: #6b7280;
-  margin-bottom: 0.75rem;
-}
-
-/* Dark‑mode additions for the new sections */
-@media (prefers-color-scheme: dark) {
-  .hero-name { color: #f1f5f9; }
-  .hero-tagline { color: #cbd5e1; }
-  .hero-link {
-    background: #3b82f6;
-    color: #fff !important;
-  }
-  .hero-link:hover {
-    background: #2563EB;
-    color: #fff !important;
-  }
-
-  .about-title { color: #f1f5f9; }
-  .about-text { color: #cbd5e1; }
-
-  .footer-text { color: #94a3b8; }
-}
-
-
-/* ===== Site Navigation Bar ===== */
-
-/* Force nav consistency */
-.site-nav {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.site-nav {
-  background: rgba(255, 255, 255, 0.92);
-  border-bottom: 1px solid #e5e7eb;
-  padding: 0.75rem 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(8px);
-}
-
-.nav-container {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Brand block (title + subtitle) */
-.nav-brand {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  line-height: 1.2;
-}
-
-.nav-brand-title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: #2563EB;
-  letter-spacing: -0.3px;
-}
-
-.nav-brand-sub {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 400;
-  font-size: 0.7rem;
-  color: #6b7280;
-  margin-top: 1px;
-}
-
-/* Navigation links */
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-link {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: #4b5563;
-  text-decoration: none;
-  transition: color 0.15s;
-  white-space: nowrap;
-}
-
-.nav-link:hover {
-  color: #2563EB;
-}
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  .site-nav {
-    background: rgba(15, 23, 42, 0.92);
-    border-bottom-color: #334155;
-  }
-  .nav-brand-title {
-    color: #60a5fa;
-  }
-  .nav-brand-sub {
-    color: #94a3b8;
-  }
-  .nav-link {
-    color: #cbd5e1;
-  }
-  .nav-link:hover {
-    color: #93c5fd;
-  }
-}
-
-/* Mobile adjustments */
-@media (max-width: 600px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-  .nav-links {
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-}
-
-/* ===== About Page ===== */
+/* ===== 6. ABOUT PAGE CONTENT ===== */
 .about-content {
   max-width: 760px;
   margin: 0 auto;
@@ -997,15 +581,7 @@ a.badge-link:hover {
   }
 }
 
-/* Dark mode for about page */
-@media (prefers-color-scheme: dark) {
-  .about-content {
-    h2, h3 { color: #f1f5f9; }
-    p, ul { color: #cbd5e1; }
-  }
-}
-
-/* ===== About page – Three large connect cards ===== */
+/* ===== 7. CONNECT CARDS (About page) ===== */
 .connect-block {
   max-width: 800px;
   margin: 2rem auto 0;
@@ -1032,7 +608,7 @@ a.badge-link:hover {
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
   text-decoration: none;
   transition: box-shadow 0.2s, transform 0.2s;
-  word-wrap: break-word;        /* allow long text to wrap */
+  word-wrap: break-word;
 }
 
 .connect-card:hover {
@@ -1064,7 +640,7 @@ a.badge-link:hover {
   text-align: center;
 }
 
-/* LinkedIn icon styling – mimic the 'in' logo */
+/* LinkedIn icon pill */
 .connect-card-linkedin .connect-card-icon {
   background: #0A66C2;
   color: #ffffff;
@@ -1080,38 +656,18 @@ a.badge-link:hover {
   margin-bottom: 0.5rem;
 }
 
-/* GitHub, website, & Tableau icons keep their native colour */
 .connect-card-github .connect-card-icon {
   color: #24292e;
 }
+
 .connect-card-website .connect-card-icon {
   color: #2563EB;
 }
+
 .connect-card-tableau .connect-card-icon {
-  color: #0D9488;        /* teal icon */
+  color: #0D9488;
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  .connect-card {
-    background: #1e293b;
-    border-color: #334155;
-    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
-  }
-  .connect-card-title { color: #f1f5f9; }
-  .connect-card-sub   { color: #94a3b8; }
-  .connect-card-github .connect-card-icon { color: #8b949e; }
-  .connect-card-website .connect-card-icon { color: #60a5fa; }
-  /* LinkedIn icon stays white on blue even in dark mode */
-  .connect-card-linkedin .connect-card-icon {
-    background: #0A66C2;
-    color: #ffffff;
-  }
-.connect-card-tableau .connect-card-icon {
-  color: #14b8a6;
-}
-
-/* Stack on mobile */
 @media (max-width: 700px) {
   .connect-cards {
     flex-direction: column;
@@ -1123,7 +679,7 @@ a.badge-link:hover {
   }
 }
 
-/* ===== Category Filter Bar ===== */
+/* ===== 8. CATEGORY FILTER BAR ===== */
 .category-bar-wrapper {
   max-width: 800px;
   margin: 0 auto 1.5rem;
@@ -1143,12 +699,12 @@ a.badge-link:hover {
   gap: 0.25rem;
   padding: 0.5rem 0;
   flex: 1;
-  /* hide scrollbar for aesthetics */
-  scrollbar-width: none;          /* Firefox */
-  -ms-overflow-style: none;       /* IE/Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+
 .category-bar::-webkit-scrollbar {
-  display: none;                  /* Chrome/Safari */
+  display: none;
 }
 
 .cat-btn {
@@ -1172,11 +728,6 @@ a.badge-link:hover {
   color: #ffffff;
 }
 
-.cat-btn.active {
-  background: #2563EB;
-}
-
-/* Arrows */
 .cat-arrow {
   background: rgba(255,255,255,0.8);
   border: none;
@@ -1202,8 +753,234 @@ a.badge-link:hover {
   visibility: hidden;
 }
 
-/* Dark mode */
+/* ===== 9. EMPTY CATEGORY MESSAGE ===== */
+.articles-empty {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: #6b7280;
+  background: #f9fafb;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.articles-empty a {
+  color: #2563EB;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.articles-empty a:hover {
+  color: #1d4ed8;
+}
+
+/* ===== 10. BADGES (Small pills) ===== */
+.connect-section {
+  max-width: 800px;
+  margin: 3rem auto 2rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.connect-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.connect-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.badge-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.badge-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s, box-shadow 0.2s;
+  background: #f3f4f6;
+  color: #1f2937;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.badge-link:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.badge-github {
+  background: #24292e;
+  color: #ffffff;
+}
+.badge-github::before {
+  content: "⬡";
+  font-size: 1.1rem;
+}
+
+.badge-website {
+  background: #2563EB;
+  color: #ffffff;
+}
+.badge-website::before {
+  content: "🌐";
+}
+
+.badge-linkedin {
+  background: #0A66C2;
+  color: #ffffff;
+}
+.badge-linkedin::before {
+  content: "in";
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-right: 0.2rem;
+}
+
+.badge-tableau {
+  background: #0D9488;
+  color: #ffffff;
+}
+.badge-tableau::before {
+  content: "📊";
+  margin-right: 0.3rem;
+}
+
+/* ===== 11. CONSOLIDATED DARK MODE ===== */
 @media (prefers-color-scheme: dark) {
+
+  /* Global */
+  body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
+  a {
+    color: #60a5fa;
+  }
+
+  /* Navigation */
+  .site-nav {
+    background: rgba(15, 23, 42, 0.92);
+    border-bottom-color: #334155;
+  }
+  .nav-brand-title {
+    color: #60a5fa;
+  }
+  .nav-brand-sub {
+    color: #94a3b8;
+  }
+  .nav-link {
+    color: #cbd5e1;
+  }
+  .nav-link:hover {
+    color: #93c5fd;
+  }
+
+  /* Homepage Hero */
+  .hero-name { color: #f1f5f9; }
+  .hero-tagline { color: #cbd5e1; }
+
+  /* Homepage About */
+  .about-title { color: #f1f5f9; }
+  .about-text { color: #cbd5e1; }
+
+  /* Latest Articles */
+  .latest-title { color: #f1f5f9; }
+  .latest-card-square {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
+  }
+  .latest-card-square:hover {
+    box-shadow: 0 6px 18px rgba(96,165,250,0.1);
+  }
+  .latest-card-date { color: #94a3b8; }
+  .latest-card-heading { color: #f1f5f9; }
+
+  /* Site footer */
+  .footer-text { color: #94a3b8; }
+
+  /* Articles list */
+  .article-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
+  }
+  .article-card__title a {
+    color: #f1f5f9;
+    &:hover { color: #93c5fd; }
+  }
+  .article-card__date { color: #94a3b8; }
+  .article-card__excerpt { color: #cbd5e1; }
+  .article-card__read-more { color: #60a5fa; }
+  .article-card__read-more:hover { color: #93c5fd; }
+
+  /* Post page */
+  .post-title { color: #f1f5f9; }
+  .post-meta { color: #94a3b8; }
+  .post-category {
+    background: #1e3a5f;
+    color: #93c5fd;
+  }
+  .post-content {
+    color: #cbd5e1;
+    h2, h3 { color: #f1f5f9; }
+    a { color: #60a5fa; &:hover { color: #93c5fd; } }
+    blockquote {
+      background: #1e293b;
+      border-left-color: #60a5fa;
+      color: #cbd5e1;
+    }
+  }
+  .post-footer { border-top-color: #334155; }
+  .post-signoff { border-bottom-color: #334155; }
+  .post-thanks { color: #cbd5e1; }
+  .back-to-articles { color: #60a5fa; &:hover { color: #93c5fd; } }
+
+  /* About page content */
+  .about-content {
+    h2, h3 { color: #f1f5f9; }
+    p, ul { color: #cbd5e1; }
+  }
+
+  /* Connect cards */
+  .connect-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 1px 3px rgba(255,255,255,0.05);
+  }
+  .connect-card-title { color: #f1f5f9; }
+  .connect-card-sub   { color: #94a3b8; }
+  .connect-card-github .connect-card-icon { color: #8b949e; }
+  .connect-card-website .connect-card-icon { color: #60a5fa; }
+  .connect-card-linkedin .connect-card-icon {
+    background: #0A66C2;
+    color: #ffffff;
+  }
+  .connect-card-tableau .connect-card-icon { color: #14b8a6; }
+
+  /* Category bar */
   .category-bar-wrapper {
     border-color: #334155;
   }
@@ -1222,31 +999,8 @@ a.badge-link:hover {
   .cat-arrow:hover {
     color: #93c5fd;
   }
-}
 
-/* ===== Empty category message ===== */
-.articles-empty {
-  max-width: 800px;
-  margin: 2rem auto;
-  text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1rem;
-  color: #6b7280;
-  background: #f9fafb;
-  padding: 2rem 1rem;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-}
-.articles-empty a {
-  color: #2563EB;
-  font-weight: 600;
-  text-decoration: underline;
-}
-.articles-empty a:hover {
-  color: #1d4ed8;
-}
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
+  /* Empty message */
   .articles-empty {
     background: #1e293b;
     border-color: #334155;
@@ -1257,5 +1011,38 @@ a.badge-link:hover {
   }
   .articles-empty a:hover {
     color: #93c5fd;
+  }
+
+  /* Badges (small pills) */
+  a.badge-link,
+  a.badge-link:visited,
+  a.badge-link:hover {
+    color: #ffffff !important;
+    text-decoration: none;
+  }
+  .badge-link {
+    background: #334155;
+  }
+  .badge-github {
+    background: #6e7681;
+  }
+  .badge-website {
+    background: #3b82f6;
+  }
+  .badge-linkedin {
+    background: #3b82f6;
+  }
+  .badge-tableau {
+    background: #14b8a6;
+  }
+
+  /* Connect section (home) */
+  .connect-title { color: #f1f5f9; }
+  .connect-text { color: #cbd5e1; }
+
+  /* Buttons */
+  .btn, button {
+    background-color: #2563EB;
+    color: white;
   }
 }
