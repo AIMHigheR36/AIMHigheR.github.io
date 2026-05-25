@@ -974,15 +974,12 @@ a.badge-link:hover {
   text-align: center;
 }
 
-/* LinkedIn badge container – reserved space to avoid layout jump */
-#linkedin-badge-sm {
-  display: inline-block;
-  min-width: 180px;
-  min-height: 190px;   /* enough for vertical badge */
-  margin-bottom: 2rem;
-}
-#linkedin-badge-sm .badge-base__link {
-  display: none;       /* hide fallback text link */
+/* Fallback link styling (visible until iframe loads) */
+.badge-base__link {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  color: #2563EB;
+  text-decoration: none;
 }
 
 /* Two cards row */
