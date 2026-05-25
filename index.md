@@ -2,28 +2,56 @@
 layout: default
 ---
 
-<div class="hero" markdown="1">
-# Alejandro Miller
-### *A quietly determined financial professional who builds systems that outlast him.*
+<!-- ===== HERO ===== -->
+<section class="hero" markdown="0">
+  <div class="hero-content">
+    {% if site.author-image %}
+      <img src="{{ site.author-image }}" alt="Alejandro Miller" class="hero-photo" width="120" height="120">
+    {% endif %}
+    <h1 class="hero-name">Alejandro Miller</h1>
+    <p class="hero-tagline">A quietly determined financial professional who builds systems that outlast him.</p>
+    <nav class="hero-links" aria-label="Primary navigation">
+      <a href="/articles/" class="hero-link">Articles</a>
+      <a href="https://github.com/AIMHigheR36" class="hero-link" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://bs.linkedin.com/in/almill36" class="hero-link" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</section>
 
-[Articles](/articles) · [LinkedIn](https://www.linkedin.com/in/almill36) · [GitHub](https://github.com/AIMHigheR36)
+<!-- ===== ABOUT ===== -->
+<section class="about" markdown="0">
+  <h2 class="about-title">About</h2>
+  <p class="about-text">
+    I'm a financial professional turning data into lasting systems. I currently work at Scotiabank, 
+    building the skills to become a Financial Data Architect. I believe in quiet competence, 
+    thoughtful analysis, and technology that serves people over time.
+  </p>
+</section>
 
-</div>
+<!-- ===== LATEST ARTICLE ===== -->
+<section class="latest-article">
+  <h2 class="latest-title">Latest Article</h2>
+  {% assign latest = site.posts.first %}
+  {% if latest %}
+    <article class="latest-card">
+      <h3 class="latest-heading">
+        <a href="{{ latest.url }}">{{ latest.title }}</a>
+      </h3>
+      <p class="latest-date">{{ latest.date | date: "%B %d, %Y" }}</p>
+      <p class="latest-excerpt">{{ latest.excerpt | strip_html | truncatewords: 25 }}</p>
+      <a href="{{ latest.url }}" class="latest-read-more">Read more →</a>
+    </article>
+  {% else %}
+    <p class="latest-empty">No articles yet. Check back soon.</p>
+  {% endif %}
+</section>
 
-<div class="connect-section" markdown="0">
-  <h2 class="connect-title">Get to know me</h2>
-  <p class="connect-text">I write about finance, systems thinking, and building things that last. Let’s connect.</p>
+<!-- ===== FOOTER (quick links) ===== -->
+<footer class="site-footer">
+  <p class="footer-text">Let's connect</p>
   <div class="badge-row">
     <a href="https://bs.linkedin.com/in/almill36" class="badge-link badge-linkedin" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://github.com/AIMHigheR36" class="badge-link badge-github" target="_blank" rel="noopener">GitHub</a>
     <a href="/" class="badge-link badge-website">aimhigher.dev</a>
   </div>
-</div>
-
----
-
-## About Me
-
-I believe the work you do matters. I learn the architecture beneath the surface, build systems that endure, and write about the process — not for recognition, but because clarity and durability matter.
-
-Outside of work, I find rhythm in basketball, play guitar and saxophone, and always aim higher.
+</footer>
