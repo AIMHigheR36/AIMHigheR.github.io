@@ -481,6 +481,15 @@ a {
   margin-right: 0.2rem;
 }
 
+/* Tableau badge */
+.badge-tableau {
+  background: #0D9488;   /* teal-600, distinct from other blues */
+  color: #ffffff;
+}
+.badge-tableau::before {
+  content: "📊";
+  margin-right: 0.3rem;
+}
 
 /* ===== Full Site Dark Mode ===== */
 @media (prefers-color-scheme: dark) {
@@ -493,7 +502,11 @@ a {
   a {
     color: #60a5fa;  /* lighter blue for readability */
   }
-
+.badge-tableau {
+  background: #14b8a6;   /* teal-400 for dark backgrounds */
+  color: #ffffff;
+}
+  
   /* Cayman theme header */
   .page-header {
     background-color: #1e293b;
@@ -1011,7 +1024,7 @@ a.badge-link:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 240px;
+  width: 180px;
   padding: 1.5rem 1rem;
   border-radius: 16px;
   background: #ffffff;
@@ -1067,12 +1080,15 @@ a.badge-link:hover {
   margin-bottom: 0.5rem;
 }
 
-/* GitHub & website icons keep their native colour */
+/* GitHub, website, & Tableau icons keep their native colour */
 .connect-card-github .connect-card-icon {
   color: #24292e;
 }
 .connect-card-website .connect-card-icon {
   color: #2563EB;
+}
+.connect-card-tableau .connect-card-icon {
+  color: #0D9488;        /* teal icon */
 }
 
 /* Dark mode */
@@ -1091,6 +1107,8 @@ a.badge-link:hover {
     background: #0A66C2;
     color: #ffffff;
   }
+.connect-card-tableau .connect-card-icon {
+  color: #14b8a6;
 }
 
 /* Stack on mobile */
