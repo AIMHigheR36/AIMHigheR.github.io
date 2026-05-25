@@ -14,6 +14,11 @@ h1, h2, h3, h4, h5, h6 {
 @import "jekyll-theme-cayman";
 
 // Custom styles
+
+.page-header {
+  display: none;
+}
+
 .page-header {
   background-color: #2563EB;
   background-image: none;
@@ -907,6 +912,3 @@ a.badge-link:hover {
   }
 }
 
-.page-header {
-  display: none;
-}
