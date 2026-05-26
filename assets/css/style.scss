@@ -493,6 +493,8 @@ a {
 
 /* Floating images & centering */
 .post-float-right {
+  max-height: 300px;        /* adjust to taste */
+  overflow: hidden;
   float: right;
   width: 40%;               /* responsive width on desktop */
   max-width: 280px;         /* never wider than 280px */
