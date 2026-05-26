@@ -42,10 +42,6 @@ You'll also find links to my professional home on LinkedIn and my technical work
 
 I'm always open to connecting with people who care about doing meaningful work, growing intentionally, and maybe catching a basketball game somewhere along the way.
 
-## Let's Connect
-
-I'm always open to connecting with people who care about doing meaningful work, growing intentionally, and maybe catching a basketball game somewhere along the way.
-
 <div class="connect-block">
   <div class="connect-cards">
     <!-- LinkedIn card -->
