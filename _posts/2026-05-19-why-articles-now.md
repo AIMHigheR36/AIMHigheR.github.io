@@ -13,8 +13,6 @@ In 2023, all I had to post was an Excel challenge screenshot and no idea if anyo
 
 Then CFI launched an Excel-erator challenge: seven days of short exercises to test your skills. I signed up, excited to see if CFI was the right fit. When the Day 1 email arrived, I screenshotted it and posted it. That was my first post ever—a tiny snippet of my journey. I had no idea where it would lead.
 
-<div style="clear:both;"></div>
-
 ## Learning the Platform
 
 I watched YouTube videos about building a strong LinkedIn profile. Creators like Jeff Su and Kenji Explains showed me how. I didn't know how to describe my work to someone outside the role. It took time and many rewrites. Their advice helped me grasp what a profile should communicate. I wrote a summary for the About section and even made a banner in Canva, which I updated several times over the years.
