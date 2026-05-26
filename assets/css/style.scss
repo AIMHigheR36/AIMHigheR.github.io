@@ -551,19 +551,19 @@ a {
   }
 }
 
-/* Side-by-side image pair */
+/* Side-by-side image pair – always two columns on desktop */
 .badge-pair {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   margin: 2rem 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;          /* prevent wrapping on desktop */
 }
 
 .badge-pair__img {
-  max-width: 250px;         /* desktop cap */
-  width: 100%;
+  width: calc(50% - 1rem);   /* each takes half the row, minus gap compensation */
+  max-width: 280px;          /* never wider than 280px */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -571,15 +571,16 @@ a {
   display: block;
 }
 
-/* Mobile: stack and constrain further */
+/* Mobile: stack vertically */
 @media (max-width: 600px) {
   .badge-pair {
     flex-direction: column;
     gap: 1.25rem;
+    flex-wrap: wrap;
   }
   .badge-pair__img {
-    max-width: 100%;       /* slightly smaller on mobile */
-    width: auto;             /* relative to screen, centred */
+    width: 100%;              /* full width on mobile */
+    max-width: 220px;
     margin: 0 auto;
   }
 }
