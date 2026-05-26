@@ -516,17 +516,39 @@ a {
   .post-float-right {
     float: none;
     display: block;
-    width: 80%;             /* smaller on mobile, centred */
+    width: auto;             /* smaller on mobile, centred */
     max-width: 100%;
     margin: 1.5rem auto;
   }
 }
 
+/* Centered images – scaled nicely on desktop, full width on mobile */
 .post-center {
   display: block;
   margin: 2rem auto;
-  max-width: 100%;
+  max-width: 600px;          /* desktop max width */
+  width: auto;
+  height: auto;
   border-radius: 8px;
+}
+
+/* Make every image inside post content fit the container */
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;            /* removes extra spacing below inline images */
+}
+
+/* Mobile: all images respect screen width */
+@media (max-width: 600px) {
+  .post-center {
+    max-width: 100% !important;   /* forces full‑width containment */
+    margin: 1.5rem auto;
+  }
+  .post-content img {
+    max-width: 100% !important;
+    width: auto;
+  }
 }
 
 /* Side-by-side image pair */
@@ -556,8 +578,8 @@ a {
     gap: 1.25rem;
   }
   .badge-pair__img {
-    max-width: 220px;       /* slightly smaller on mobile */
-    width: 80%;             /* relative to screen, centred */
+    max-width: 100%;       /* slightly smaller on mobile */
+    width: auto;             /* relative to screen, centred */
     margin: 0 auto;
   }
 }
