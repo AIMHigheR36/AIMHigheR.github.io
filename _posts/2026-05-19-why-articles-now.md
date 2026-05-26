@@ -19,7 +19,7 @@ Then CFI launched an Excel-erator challenge: seven days of short exercises to te
 
 I watched YouTube videos about building a strong LinkedIn profile. Creators like Jeff Su and Kenji Explains showed me how. I didn't know how to describe my work to someone outside the role. It took time and many rewrites. Their advice helped me grasp what a profile should communicate. I wrote a summary for the About section and even made a banner in Canva, which I updated several times over the years.
 
-<img src="/assets/images/First-Banner.jpg" alt="My First LinkedIn Banner" class="post-center" style="max-width:600px;">
+<img src="/assets/images/First-Banner.jpg" alt="My First LinkedIn Banner" class="post-center">
 
 I also studied how others posted. I noted what grabbed my attention and learned what to avoid from the ones I scrolled past. It was never about how long the post was, just whether it was engaging. I still didn't know if I had a voice worth hearing, but I figured I have nothing to lose. Either people engage, or I keep enjoying my small corner with my small wins.
 
