@@ -7,7 +7,7 @@ categories: the-platform the-person
 
 ## The First Post
 
-<img src="/assets/images/First-Post.PNG" alt="Excel-erator Challenge post" class="post-float-right">
+<img src="/assets/images/Excel-erator-Challenge.jpg" alt="Excel-erator Challenge post" class="post-float-right">
 
 In 2023, all I had to post was an Excel challenge screenshot and no idea if anyone would care. I'd had a LinkedIn profile for a decade but never used it. I knew the platform was a different space for professionals to talk about their work, but I didn't know what people were looking for. I was only connected to high school classmates and family.
 
