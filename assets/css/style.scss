@@ -361,6 +361,9 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   text-decoration: none;
+  text-overflow: unset;
+  overflow: visible;
+  white-space: normal;
 }
 
 .post-content {
