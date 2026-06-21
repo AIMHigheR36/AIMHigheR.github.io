@@ -54,19 +54,19 @@ I'm always open to connecting with people who care about doing meaningful work, 
     <a href="https://github.com/AIMHigheR36" class="connect-card connect-card-github" target="_blank" rel="noopener">
       <span class="connect-card-icon">⬡</span>
       <span class="connect-card-title">AIMHigheR</span>
-      <span class="connect-card-sub">GitHub</span>
+      <span class="connect-card-sub">Home of Technical Craft | Data Models, Workbooks &amp; Code | Designed for Clarity and Durability</span>
     </a>
     <!-- Website card -->
     <a href="/" class="connect-card connect-card-website">
       <span class="connect-card-icon">🌐</span>
       <span class="connect-card-title">A.I.M.HigheR</span>
-      <span class="connect-card-sub">Alejandro Miller's personal website</span>
+      <span class="connect-card-sub">AIMhigheR | Articles on Finance, Data &amp; Systems Thinking | The Story Behind the Work</span>
     </a>
     <!-- Tableau card -->
 <a href="https://public.tableau.com/app/profile/alejandro.miller7081/vizzes" class="connect-card connect-card-tableau" target="_blank" rel="noopener">
   <span class="connect-card-icon">📊</span>
   <span class="connect-card-title">Tableau Public</span>
-  <span class="connect-card-sub">My dashboards &amp; vizzes</span>
+  <span class="connect-card-sub">Seeing the Patterns | Financial Dashboards &amp; Visual Analysis | Turning Numbers into Insight</span>
 </a>    
   </div>
 </div>
