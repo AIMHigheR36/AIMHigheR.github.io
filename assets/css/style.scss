@@ -461,6 +461,25 @@ a {
   line-height: 1.5;
 }
 
+/* Disclaimer block */
+.post-disclaimer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-left: 4px solid #2563EB;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #4b5563;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-disclaimer {
+    background: #1e293b;
+    border-left-color: #60a5fa;
+    color: #94a3b8;
+  }
+
 .post-links {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 0.9rem;
@@ -586,6 +605,16 @@ a {
     max-width: 220px;
     margin: 0 auto;
   }
+
+/* Photo credit / legal line */
+.photo-credit {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
 }
 
 /* ===== 6. ABOUT PAGE CONTENT ===== */
