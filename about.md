@@ -48,7 +48,7 @@ I'm always open to connecting with people who care about doing meaningful work, 
     <a href="https://bs.linkedin.com/in/almill36" class="connect-card connect-card-linkedin" target="_blank" rel="noopener">
       <span class="connect-card-icon">in</span>
       <span class="connect-card-title">Alejandro M.</span>
-      <span class="connect-card-sub">Finance Analyst, FP&A | Profitability &amp; Segmentation | FMVA® | BIDA® | ACCA Student | Building Clarity from Complexity<br>Scotiabank | Harvard Business School Online</span>
+      <span class="connect-card-sub">Finance Analyst, FP&A | Building Towards Financial Data Architecture | Bridging Finance Strategy &amp; Data Systems</span>
     </a>
     <!-- GitHub card -->
     <a href="https://github.com/AIMHigheR36" class="connect-card connect-card-github" target="_blank" rel="noopener">
