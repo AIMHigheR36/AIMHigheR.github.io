@@ -47,3 +47,7 @@ I could keep that curiosity, creativity, and skills and design something that I 
 I see patterns in almost anything. My brain instinctively looks for the hidden structure. I'm not satisfied using a system I don't understand. I want to see how it works underneath. A curious mind always pursuing new information, disciplined and rigorous, with an engineer's mindset—that's the core of who I am.
 
 That's the person who sits down to write these articles. The same mind that once hunted for patterns in license plates and encyclopedias now searches for structure in finance, data, and the systems that connect them. Everything I share here grows from that same root. If you've read this far, you've met the man behind the words. The rest is just that curiosity, given room to build.
+
+---
+
+*Thanks for reading. I write about finance, systems thinking, and building things that last. You can find more of my writing at [aimhigher.dev](https://aimhigher.dev), explore technical projects on [GitHub](https://github.com/AIMHigheR36), see dashboards on [Tableau](https://public.tableau.com/app/profile/alejandro.miller7081/vizzes), and connect with me on [LinkedIn](https://www.linkedin.com/in/almill36).*
