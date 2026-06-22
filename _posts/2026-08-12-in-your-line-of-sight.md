@@ -62,8 +62,4 @@ Later, the Bank’s IT department reviewed the process I had created and incorpo
 
 The award that followed was lovely. But the real takeaways weren't hanging on a wall. They were the teammates who could finally manage the workload. The customers who still got their transfers on time, in a season when you never knew what a delayed payment might cost someone. And the future colleagues who would inherit a process that didn't depend on overtime to function. This was worth doing for them, keeping them in the line of sight.
 
----
-
-*Thanks for reading. I write about finance, systems thinking, and building things that last. You can find more of my writing at [aimhigher.dev](https://aimhigher.dev), explore technical projects on [GitHub](https://github.com/AIMHigheR36), see dashboards on [Tableau](https://public.tableau.com/app/profile/alejandro.miller7081/vizzes), and connect with me on [LinkedIn](https://www.linkedin.com/in/almill36).*
-
 *Any data shown in screenshots is illustrative and does not represent real customer or transaction information.*
