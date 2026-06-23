@@ -56,6 +56,8 @@ This was entirely new to me, documenting a process. I understood the process tec
 
 When I presented them to management, I made sure that my coworker was recognized as the entire process was only possible because of what they presented to me, the original template. Without that, I don’t think I could have done what I did. We were later recognized through the banks “In Your Line of Sight” program for significantly changing or improving a bank process.
 
+Next was training the other Data Processors in the process, also something of a first. I now had to speak to others; I had to test if what I had created in the documents could be followed with no involvement from myself and produce the desired results every time. To my surprise they grasped it easily. A few small clarifications and they were pros in no time. I guess I created a sound document as it is still used today by the new team of Data Processors and making transfer posting easier.
+
 More important to me at the time than being recognized was knowing that in some way we were making sure that customers were getting their money timely despite internal changes and challenges. During the pandemic, you never knew if one of those transfers was the difference between someone having groceries that day or other essential matters. The daily customers’ reliance on online banking transfers meant we were important in everyone else’s day-to-day business.
 
 Later, the Bank’s IT department reviewed the process I had created and incorporated the process in a new system upgrade.
