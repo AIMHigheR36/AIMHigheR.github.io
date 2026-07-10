@@ -460,6 +460,18 @@ a {
   shape-outside: margin-box;
 }
 
+/* Float images left */
+.post-float-left {
+  float: left;
+  width: 40%;
+  max-width: 280px;
+  height: auto;
+  margin: 0 1.75rem 1.25rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  shape-outside: margin-box;
+}
+
 /* Centered images */
 .post-center {
   display: block;
@@ -992,6 +1004,13 @@ a {
       max-width: 100%;
       margin: 1.5rem auto;
     }
+  .post-float-left {
+    float: none;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    margin: 1.5rem auto;
+  }
     .badge-pair {
       flex-direction: column;
       gap: 1.25rem;
