@@ -69,7 +69,7 @@ Then there was the fatigue after all those hours worked. My mind felt like puddi
 
 A point of annoyance for me was the fact that we were considered the same as the Data Processors in the branch. The roles did have some overlap, but so much of our work was unique to the work of the department. Yet, our job descriptions mirrored theirs. Without the proper context, you might think we were the same, and we weren’t.
 
-We posted so much work that we needed a program called FOXTROT to help post faster. No one else in the bank had it. We saw the sessions and the transactions coming in. We manually posted entries to customers’ accounts daily and were responsible for customers’ salaries and deductions. There was a certain risk involved in our work that our pay didn't reflect. We were neglected in ways that showed they didn't understand what we did. We deserved a distinct job title, a proper description that reflected the work we did, and pay that matched.
+We posted so much work that we needed a program called FOXTROT to help post faster. No one else in the bank had access to or used it. We saw the sessions and the transactions coming in. We manually posted entries to customers’ accounts daily and were responsible for customers’ salaries and deductions. There was a certain risk involved in our work that our pay didn't reflect. We were neglected in ways that showed they didn't understand what we did. We deserved a distinct job title, a proper description that reflected the work we did, and pay that matched.
 
 ## Signing the Contract
 
