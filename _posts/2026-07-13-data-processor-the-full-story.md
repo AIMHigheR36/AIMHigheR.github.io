@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Data Processor: The Full Story"
-date: 2026-07-13
+date: 2026-07-29
 categories: the-technical-craft the-person
 ---
 
