@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "In Your Line of Sight"
-date: 2026-08-12
+date: 2026-08-24
 categories: the-technical-craft the-bridge
 ---
 
