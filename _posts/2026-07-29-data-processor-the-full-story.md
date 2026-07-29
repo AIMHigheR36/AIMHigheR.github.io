@@ -117,13 +117,11 @@ Some solutions didn’t need management’s involvement. Sometimes I would just 
 
 We mainly worked in silos despite being a team of Data Processors. If I was on rejects, I only did rejects. If that meant someone else worked overtime when I was done and could have helped, that wasn’t my problem. We were not kind to each other, dealing with our own frustrations and feeling everyone on the team didn’t pull their weight.
 
-We eventually got into a habit of calling out sick. When we would have a heavy day, you can guarantee the next day someone will call out. When that happened, that meant those who did come to work would have a second hard day in a row just because we were short a person. Eventually we started getting petty about the days we took, not because we were tired or close to burnout but because we wanted to get back at the person who called out, for them to experience what they put us through when they weren’t there. That cycle went on for a while, and it was unspoken, but we knew amongst ourselves what we were doing.
-
-The pettiness didn’t help and only brought discord amongst the team. There were only three of us. If we didn’t find a way to work together, we would only have another layer of frustrations to deal with. It didn’t make the work any easier, and the work was the problem, not the team members.
+We handled things with pettiness, not maturity and the pettiness only brought discord amongst the team. There were only three of us. If we didn’t find a way to work together, we would only have another layer of frustrations to deal with. It didn’t make the work any easier, and the work was the problem, not the team members.
 
 ## One Person
 
-I eventually stopped participating in the petty sick days. I would only call if I was genuinely sick or otherwise too tired, not out of spite. It wasn’t easy making that shift. I was making a sacrifice no one else was making, and with the added risk of back-to-back heavy days as the pattern continued with the other team members. It felt like the other two team members were of the mindset: “Well, I can’t guarantee that the other person would do it for me if I did it for them, so I won’t do it for them”.
+I had to find a new way to address the frustrations and it wasn’t easy making that shift. I started making sacrifices others on the team weren't making. It felt like the other two team members were of the mindset: “Well, I can’t guarantee that the other person would do it for me if I did it for them, so I won’t do it for them”.
 
 I would sometimes work overtime just to make sure they didn’t. If I was on the 9-5 shift, I would stay back an hour to help with any work if it looked too heavy to make sure the 10-6 could get off at 6 and 11-7 could get off at 7. Those small sacrifices made us a team. We started talking to each other more, tackling the work as a team and not in silos. The person on rejects wouldn’t only do rejects. If they finished prepping rejects and there was other work to do, they would pitch in until the next set of rejects came. Same for the person on manual and journals.
 
