@@ -27,11 +27,13 @@ I remember when I first started, there would be 60-70 rejects per session. There
 
 It was easy to feel overwhelmed on the desk. Overtime became a new regular for me. I still remember the first time it happened. I was working 10-6, and I saw the other Data Processors weren’t moving. The day had ended, but there was still work to complete. That was my first lesson on how this team approached work: the day ended when the work was complete, not because the clock struck a magic number. I stayed, with the quiet understanding that we all leave when the work is done. I worked two hours of overtime on my first day of cross-training. I still have the email they sent the next day thanking us for the sacrifice. It was a small one at first. What was one afternoon?
 
-<img src="/assets/images/Overtime_Email.png" alt="First Overtime Email" class="post-float-right">
+<img src="/assets/images/Overtime_Email.png" alt="First Overtime Email" class="post-center">
 
 I started logging all my overtime in my desk calendar, so as not to forget it by the next week. I also highlighted our pay days as a motivation. I could look at the calendar and know what I was working towards.
 
 <img src="/assets/images/Calendar_Jun_2019.png" alt="June 2019 Calendar" class="post-float-right">
+
+<div style="clear:both;"></div>
 
 ## A Practical Joke
 
@@ -59,7 +61,7 @@ Then there was the fatigue after all those hours worked. My mind felt like puddi
 
 I didn’t know it then, but those hours were adding up. By the end, I would work over 500 hours of overtime. That’s an additional sixty-two 8-hour days, not including lunch, over the span of three and a half years. That doesn’t feel like it does justice to what that time meant or felt like. I had posted over 159,000 manual entries and made only 213 errors (0.15%), & possibly over 7,000 journals (had to create a measure myself).
 
-<img src="/assets/images/Calendar_Jan_2020.png" alt="January 2020 Calendar" class="post-center">
+<img src="/assets/images/Calendar_Jan_2020.png" alt="January 2020 Calendar" class="calendar-img">
 
 ## Signing the Contract
 
@@ -85,7 +87,7 @@ I remember when a relatively new team member who came from the branch had a conv
 
 Something that was not clear to me at that time was communication and how important it was. At the time, I felt it was my management’s responsibility to see the issue and then come to us and have a conversation to address it. I didn’t see that it was also my responsibility as an employee to raise my concerns to management for them to know what we were experiencing. When we would meet, management's solutions were always shift-based. They felt we were just coming in to work too early and needed to stay later. They tried to make all of us come in from 12-8. We didn’t like that because the days we didn’t need to be there that late wouldn’t help, and what about the work that comes earlier? Now we would just come to work with a stack of work waiting for us. We often would enter these meetings frustrated from the workload and wouldn’t take the opportunity to speak up about the frustrations we were experiencing.
 
-<img src="/assets/images/Data_Processor_Shift_Change.png" alt="Data Processor Shift Change Email" class="post-float-right">
+<img src="/assets/images/Shift_Change_Email.png" alt="Data Processor Shift Change Email" class="post-float-right">
 
 These meetings were also few and far between and usually came with management already presenting a solution rather than coming with open ears to hear our concerns. I feel like that contributed to a disconnect. There were experiences that, without sitting on the floor, you wouldn’t understand.  If I said I got 100 journals to post, that just sounds like a number, irrelevant to anything else. What that means to a Data Processor is I’m about to sit at my desk for the next hour and a half posting, with a chance that some of these journals won’t post due to preparation issues. The problem was more complex than shifts, and the solution required more understanding than a bird's-eye view.
 
@@ -153,7 +155,7 @@ We also saw a major increase in work. Since customers couldn’t come into the b
 
 I even came in on weekends to post the work we couldn’t complete throughout the week to make sure it didn’t spill into the next week. Even crazier was the official work hours. The banks had all agreed to reduce the hours worked. Yet, as Data Processors, we didn’t earn overtime until after working 8 hours. So not only were we working up until the last possible moment with curfews, but we also worked extra time more than anyone else and weren’t compensated for it.
 
-<img src="/assets/images/Calendar_Sep_2020.png" alt="September 2020 Calendar" class="post-center">
+<img src="/assets/images/Calendar_Sep_2020.png" alt="September 2020 Calendar" class="calendar-img">
 
 ## SSD Clerk
 
@@ -199,7 +201,7 @@ This cross-training also didn’t come with any stipend or increase in salary, y
 
 This cross-training was also longer than others. Most cross-training is expected to take six months. However, I technically cross-trained for fourteen months. To make it worse, this cross-training was not official. I didn’t sign a letter, and I later learned that HR was unaware of my work. From a bank perspective, I was just a Data Processor, and I was so much more by the end of this era. I cross-trained unofficially from August 2020 until they wanted me to cross-train as the Salary Clerk because you couldn’t cross-train on more than one desk at a time.
 
-<img src="/assets/images/Calendar_Oct_2020.png" alt="October 2020 Calendar" class="post-center">
+<img src="/assets/images/Calendar_Oct_2020.png" alt="October 2020 Calendar" class="calendar-img">
 
 ## Salary Clerk
 
