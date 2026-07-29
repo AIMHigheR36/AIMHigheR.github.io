@@ -33,8 +33,6 @@ I started logging all my overtime in my desk calendar, so as not to forget it by
 
 <img src="/assets/images/Calendar_Jun_2019.png" alt="June 2019 Calendar" class="post-float-right">
 
-<div style="clear:both;"></div>
-
 ## A Practical Joke
 
 An early experience was when a coworker swapped phones with me. I didn’t know why. He was previously a Data Processor and someone the branches had come to call on. He gave me his extension as a practical joke, and it stuck. I remember the first time someone called the line asking for him. I said, “No, this is Alejandro”. Confused because they didn’t know who I was, they just went right into their query. They were looking for a salary. I had only been cross-training for a few short weeks at the time. I had no idea how to help them. I put my hand over the phone and asked on the floor if someone could help me find what they were looking for. Thankfully, someone heard me and came over and helped. They did the research themselves on my computer. I tried to pay attention as much as possible so the next time I wouldn’t need to bother anyone.
@@ -87,7 +85,7 @@ I remember when a relatively new team member who came from the branch had a conv
 
 Something that was not clear to me at that time was communication and how important it was. At the time, I felt it was my management’s responsibility to see the issue and then come to us and have a conversation to address it. I didn’t see that it was also my responsibility as an employee to raise my concerns to management for them to know what we were experiencing. When we would meet, management's solutions were always shift-based. They felt we were just coming in to work too early and needed to stay later. They tried to make all of us come in from 12-8. We didn’t like that because the days we didn’t need to be there that late wouldn’t help, and what about the work that comes earlier? Now we would just come to work with a stack of work waiting for us. We often would enter these meetings frustrated from the workload and wouldn’t take the opportunity to speak up about the frustrations we were experiencing.
 
-<img src="/assets/images/Shift_Change_Email.png" alt="Data Processor Shift Change Email" class="post-float-right">
+<img src="/assets/images/Data_Processor_Shift_Change.png" alt="Data Processor Shift Change Email" class="post-float-right">
 
 These meetings were also few and far between and usually came with management already presenting a solution rather than coming with open ears to hear our concerns. I feel like that contributed to a disconnect. There were experiences that, without sitting on the floor, you wouldn’t understand.  If I said I got 100 journals to post, that just sounds like a number, irrelevant to anything else. What that means to a Data Processor is I’m about to sit at my desk for the next hour and a half posting, with a chance that some of these journals won’t post due to preparation issues. The problem was more complex than shifts, and the solution required more understanding than a bird's-eye view.
 
